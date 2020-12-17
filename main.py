@@ -44,10 +44,12 @@ nowtimedate = str(lol.strftime("%Y-%m-%d-%H-%M-%S"))
 mass = ['10','20','30','40']
 for star in mass:
   google_search = google(keywords_search+'&start='+star)
-  save_results(google_search,star+':start-google_search-'+nowtimedate+'.txt')
+  mkdir(nowtimedate)
+  mkdir(nowtimedate+'/search')
+  mkdir(nowtimedate+'/logs')
+  save_results(google_search,nowtimedate+'/search/'+star+':start-google_search-'+nowtimedate+'.txt')
   start = 0
   end = len(google_search)-1
-  mkdir(nowtimedate)
   while start<end:
-    download_logs(google_search[start][0],nowtimedate)
+    download_logs(google_search[start][0],nowtimedate+'/logs')
     start+=1
