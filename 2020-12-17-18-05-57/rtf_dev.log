@@ -1,0 +1,5774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>rtf_dev.log - Rudder tools - Rudder Issue Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="6PMD1ugRbtgfFscVnI+oNZ9IqJ0fTumhaTws/XobYXQ1XxNAmkWhDP03bfmdmQkltyHS2owdPuCiHgS4F5s4Uw==" />
+<link rel='shortcut icon' href='/themes/rudder5/favicon/favicon.ico?1607680829' />
+<link rel="stylesheet" media="all" href="/stylesheets/jquery/jquery-ui-1.11.0.css?1586192448" />
+<link rel="stylesheet" media="all" href="/stylesheets/tribute-3.7.3.css?1586192449" />
+<link rel="stylesheet" media="all" href="/themes/rudder5/stylesheets/application.css?1607680815" />
+<link rel="stylesheet" media="all" href="/stylesheets/responsive.css?1586192449" />
+
+<script src="/javascripts/jquery-2.2.4-ui-1.11.0-ujs-5.2.3.js?1586192448"></script>
+<script src="/javascripts/tribute-3.7.3.min.js?1586192448"></script>
+<script src="/javascripts/application.js?1586192448"></script>
+<script src="/javascripts/responsive.js?1586192449"></script>
+<script>
+//<![CDATA[
+$(window).on('load', function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+<script src="/themes/rudder5/javascripts/theme.js?1607680815"></script>
+<link rel="stylesheet" media="screen" href="/plugin_assets/redmine_tags/stylesheets/jquery.tagit.css?1607680916" />
+<link rel="stylesheet" media="screen" href="/plugin_assets/redmine_tags/stylesheets/redmine_tags.css?1607680916" />
+<script src="/plugin_assets/redmine_tags/javascripts/tag-it.min.js?1607680916"></script>
+<!-- page specific tags -->
+    <link rel="stylesheet" media="screen" href="/stylesheets/scm.css?1586192449" /></head>
+<body class="theme-Rudder5 project-rudder-tools has-main-menu controller-attachments action-show avatars-on">
+
+<div id="wrapper">
+
+<div class="flyout-menu js-flyout-menu">
+
+
+        <div class="flyout-menu__search">
+            <form action="/projects/rudder-tools/search" accept-charset="UTF-8" name="form-e61e0bec" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+            
+            <label class="search-magnifier search-magnifier--flyout" for="flyout-search">&#9906;</label>
+            <input type="text" name="q" id="flyout-search" class="small js-search-input" placeholder="Search" />
+</form>        </div>
+
+
+        <h3>Project</h3>
+        <span class="js-project-menu"></span>
+
+    <h3>General</h3>
+    <span class="js-general-menu"></span>
+
+    <span class="js-sidebar flyout-menu__sidebar"></span>
+
+    <h3>Profile</h3>
+    <span class="js-profile-menu"></span>
+
+</div>
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="login" href="/login">Sign in</a></li><li><a class="register" href="/account/register">Register</a></li></ul>    </div>
+    
+    <ul><li><a class="home" href="/">Home</a></li><li><a class="projects" href="/projects">Projects</a></li><li><a class="help" href="https://www.redmine.org/guide">Help</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/projects/rudder-tools/search" accept-charset="UTF-8" name="form-6f20bebf" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="scope" />
+        
+        <label for='q'>
+          <a accesskey="4" href="/projects/rudder-tools/search">Search</a>:
+        </label>
+        <input type="text" name="q" id="q" size="20" class="small" accesskey="f" data-auto-complete="true" data-issues-url="/issues/auto_complete?q=" />
+</form>        <div id="project-jump" class="drdn"><span class="drdn-trigger">Rudder tools</span><div class="drdn-content"><div class="quick-search"><input type="text" name="q" id="projects-quick-search" value="" class="autocomplete" data-automcomplete-url="/projects/autocomplete.js?jump=issues" autocomplete="off" /></div><div class="drdn-items projects selection"></div><div class="drdn-items all-projects selection"><a href="/projects?jump=issues">All Projects</a></div></div></div>
+    </div>
+
+    <h1><span class="current-project">Rudder tools</span></h1>
+
+    <div id="main-menu" class="tabs">
+        <ul><li><a class="overview" href="/projects/rudder-tools">Overview</a></li><li><a class="activity" href="/projects/rudder-tools/activity">Activity</a></li><li><a class="roadmap" href="/projects/rudder-tools/versions.html">Roadmap</a></li><li><a class="issues selected" href="/projects/rudder-tools/issues">Issues</a></li><li><a class="repository" href="/projects/rudder-tools/repository">Repository</a></li></ul>
+        <div class="tabs-buttons" style="display:none;">
+            <button class="tab-left" onclick="moveTabLeft(this); return false;"></button>
+            <button class="tab-right" onclick="moveTabRight(this); return false;"></button>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="nosidebar">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+  <a class="icon icon-download" href="/attachments/download/1733/rtf_dev.log">Download (42.3 KB)</a></div>
+
+<h2>
+  <a class="issue tracker-1 status-11 priority-16 priority-default" title="RTF dev is not working" href="/issues/18090">Bug #18090</a> » rtf_dev.log
+</h2>
+
+<div class="attachments">
+<p>
+   <span class="author"><a class="user active" href="/users/2813">Elaad FURREEDAN</a>, 2020-08-05 10:45</span></p>
+</div>
+<div class="filecontent-container">
+  
+  &nbsp;
+  <div class="autoscroll">
+<table class="filecontent syntaxhl">
+<tbody>
+  <tr id="L1">
+    <th class="line-num">
+      <a href="#L1">1</a>
+    </th>
+    <td class="line-code">
+      <pre>Bringing machine 'dev_relay' up with 'virtualbox' provider...
+</pre>
+    </td>
+  </tr>
+  <tr id="L2">
+    <th class="line-num">
+      <a href="#L2">2</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Importing base box 'normation/debian-10-64'...
+</pre>
+    </td>
+  </tr>
+  <tr id="L3">
+    <th class="line-num">
+      <a href="#L3">3</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Matching MAC address for NAT networking...
+</pre>
+    </td>
+  </tr>
+  <tr id="L4">
+    <th class="line-num">
+      <a href="#L4">4</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Checking if box 'normation/debian-10-64' version '1.0' is up to date...
+</pre>
+    </td>
+  </tr>
+  <tr id="L5">
+    <th class="line-num">
+      <a href="#L5">5</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: A newer version of the box 'normation/debian-10-64' for provider 'virtualbox' is
+</pre>
+    </td>
+  </tr>
+  <tr id="L6">
+    <th class="line-num">
+      <a href="#L6">6</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: available! You currently have version '1.0'. The latest is version
+</pre>
+    </td>
+  </tr>
+  <tr id="L7">
+    <th class="line-num">
+      <a href="#L7">7</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: '2.0'. Run `vagrant box update` to update.
+</pre>
+    </td>
+  </tr>
+  <tr id="L8">
+    <th class="line-num">
+      <a href="#L8">8</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Setting the name of the VM: dev_relay
+</pre>
+    </td>
+  </tr>
+  <tr id="L9">
+    <th class="line-num">
+      <a href="#L9">9</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Clearing any previously set network interfaces...
+</pre>
+    </td>
+  </tr>
+  <tr id="L10">
+    <th class="line-num">
+      <a href="#L10">10</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Preparing network interfaces based on configuration...
+</pre>
+    </td>
+  </tr>
+  <tr id="L11">
+    <th class="line-num">
+      <a href="#L11">11</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Adapter 1: nat
+</pre>
+    </td>
+  </tr>
+  <tr id="L12">
+    <th class="line-num">
+      <a href="#L12">12</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Adapter 2: hostonly
+</pre>
+    </td>
+  </tr>
+  <tr id="L13">
+    <th class="line-num">
+      <a href="#L13">13</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Forwarding ports...
+</pre>
+    </td>
+  </tr>
+  <tr id="L14">
+    <th class="line-num">
+      <a href="#L14">14</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: 22 (guest) =&gt; 2222 (host) (adapter 1)
+</pre>
+    </td>
+  </tr>
+  <tr id="L15">
+    <th class="line-num">
+      <a href="#L15">15</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Running 'pre-boot' VM customizations...
+</pre>
+    </td>
+  </tr>
+  <tr id="L16">
+    <th class="line-num">
+      <a href="#L16">16</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Booting VM...
+</pre>
+    </td>
+  </tr>
+  <tr id="L17">
+    <th class="line-num">
+      <a href="#L17">17</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Waiting for machine to boot. This may take a few minutes...
+</pre>
+    </td>
+  </tr>
+  <tr id="L18">
+    <th class="line-num">
+      <a href="#L18">18</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: SSH address: 127.0.0.1:2222
+</pre>
+    </td>
+  </tr>
+  <tr id="L19">
+    <th class="line-num">
+      <a href="#L19">19</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: SSH username: vagrant
+</pre>
+    </td>
+  </tr>
+  <tr id="L20">
+    <th class="line-num">
+      <a href="#L20">20</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: SSH auth method: private key
+</pre>
+    </td>
+  </tr>
+  <tr id="L21">
+    <th class="line-num">
+      <a href="#L21">21</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:
+</pre>
+    </td>
+  </tr>
+  <tr id="L22">
+    <th class="line-num">
+      <a href="#L22">22</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Vagrant insecure key detected. Vagrant will automatically replace
+</pre>
+    </td>
+  </tr>
+  <tr id="L23">
+    <th class="line-num">
+      <a href="#L23">23</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: this with a newly generated keypair for better security.
+</pre>
+    </td>
+  </tr>
+  <tr id="L24">
+    <th class="line-num">
+      <a href="#L24">24</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:
+</pre>
+    </td>
+  </tr>
+  <tr id="L25">
+    <th class="line-num">
+      <a href="#L25">25</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Inserting generated public key within guest...
+</pre>
+    </td>
+  </tr>
+  <tr id="L26">
+    <th class="line-num">
+      <a href="#L26">26</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Removing insecure key from the guest if it's present...
+</pre>
+    </td>
+  </tr>
+  <tr id="L27">
+    <th class="line-num">
+      <a href="#L27">27</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Key inserted! Disconnecting and reconnecting using new SSH key...
+</pre>
+    </td>
+  </tr>
+  <tr id="L28">
+    <th class="line-num">
+      <a href="#L28">28</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Machine booted and ready!
+</pre>
+    </td>
+  </tr>
+  <tr id="L29">
+    <th class="line-num">
+      <a href="#L29">29</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Checking for guest additions in VM...
+</pre>
+    </td>
+  </tr>
+  <tr id="L30">
+    <th class="line-num">
+      <a href="#L30">30</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Setting hostname...
+</pre>
+    </td>
+  </tr>
+  <tr id="L31">
+    <th class="line-num">
+      <a href="#L31">31</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Configuring and enabling network interfaces...
+</pre>
+    </td>
+  </tr>
+  <tr id="L32">
+    <th class="line-num">
+      <a href="#L32">32</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Mounting shared folders...
+</pre>
+    </td>
+  </tr>
+  <tr id="L33">
+    <th class="line-num">
+      <a href="#L33">33</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: /vagrant =&gt; /home/elaad/rudder-tests
+</pre>
+    </td>
+  </tr>
+  <tr id="L34">
+    <th class="line-num">
+      <a href="#L34">34</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Running provisioner: shell...
+</pre>
+    </td>
+  </tr>
+  <tr id="L35">
+    <th class="line-num">
+      <a href="#L35">35</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Running: inline script
+</pre>
+    </td>
+  </tr>
+  <tr id="L36">
+    <th class="line-num">
+      <a href="#L36">36</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ echo 'Starting VM setup'
+</pre>
+    </td>
+  </tr>
+  <tr id="L37">
+    <th class="line-num">
+      <a href="#L37">37</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Starting VM setup
+</pre>
+    </td>
+  </tr>
+  <tr id="L38">
+    <th class="line-num">
+      <a href="#L38">38</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ /vagrant/scripts/cleanbox.sh /vagrant
+</pre>
+    </td>
+  </tr>
+  <tr id="L39">
+    <th class="line-num">
+      <a href="#L39">39</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ /vagrant/scripts/network.sh 192.168.2 2 'relay agent1 agent2 server'
+</pre>
+    </td>
+  </tr>
+  <tr id="L40">
+    <th class="line-num">
+      <a href="#L40">40</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ set +x
+</pre>
+    </td>
+  </tr>
+  <tr id="L41">
+    <th class="line-num">
+      <a href="#L41">41</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ head -n 1G
+</pre>
+    </td>
+  </tr>
+  <tr id="L42">
+    <th class="line-num">
+      <a href="#L42">42</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ http_proxy=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L43">
+    <th class="line-num">
+      <a href="#L43">43</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ https_proxy=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L44">
+    <th class="line-num">
+      <a href="#L44">44</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ HTTP_PROXY=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L45">
+    <th class="line-num">
+      <a href="#L45">45</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ HTTPS_PROXY=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L46">
+    <th class="line-num">
+      <a href="#L46">46</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ PLUGINS_VERSION=
+</pre>
+    </td>
+  </tr>
+  <tr id="L47">
+    <th class="line-num">
+      <a href="#L47">47</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ FORGET_CREDENTIALS=
+</pre>
+    </td>
+  </tr>
+  <tr id="L48">
+    <th class="line-num">
+      <a href="#L48">48</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ DISABLE_AUTODETECT_NETWORKS=yes
+</pre>
+    </td>
+  </tr>
+  <tr id="L49">
+    <th class="line-num">
+      <a href="#L49">49</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ ALLOWEDNETWORK=192.168.2.0/24
+</pre>
+    </td>
+  </tr>
+  <tr id="L50">
+    <th class="line-num">
+      <a href="#L50">50</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ UNSUPPORTED=
+</pre>
+    </td>
+  </tr>
+  <tr id="L51">
+    <th class="line-num">
+      <a href="#L51">51</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ ADMIN_PASSWORD=admin
+</pre>
+    </td>
+  </tr>
+  <tr id="L52">
+    <th class="line-num">
+      <a href="#L52">52</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ REPO_PREFIX=rtf/
+</pre>
+    </td>
+  </tr>
+  <tr id="L53">
+    <th class="line-num">
+      <a href="#L53">53</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ++ /usr/local/bin/rudder-setup setup-relay 6.0 ''
+</pre>
+    </td>
+  </tr>
+  <tr id="L54">
+    <th class="line-num">
+      <a href="#L54">54</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Warning: apt-key output should not be parsed (stdout is not a terminal)
+</pre>
+    </td>
+  </tr>
+  <tr id="L55">
+    <th class="line-num">
+      <a href="#L55">55</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Reading package lists...
+</pre>
+    </td>
+  </tr>
+  <tr id="L56">
+    <th class="line-num">
+      <a href="#L56">56</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Building dependency tree...
+</pre>
+    </td>
+  </tr>
+  <tr id="L57">
+    <th class="line-num">
+      <a href="#L57">57</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Reading state information...
+</pre>
+    </td>
+  </tr>
+  <tr id="L58">
+    <th class="line-num">
+      <a href="#L58">58</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: apt-transport-https is already the newest version (1.8.2).
+</pre>
+    </td>
+  </tr>
+  <tr id="L59">
+    <th class="line-num">
+      <a href="#L59">59</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+</pre>
+    </td>
+  </tr>
+  <tr id="L60">
+    <th class="line-num">
+      <a href="#L60">60</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: OK
+</pre>
+    </td>
+  </tr>
+  <tr id="L61">
+    <th class="line-num">
+      <a href="#L61">61</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:1 http://deb.debian.org/debian buster InRelease [122 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L62">
+    <th class="line-num">
+      <a href="#L62">62</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:2 http://deb.debian.org/debian buster-updates InRelease [51.9 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L63">
+    <th class="line-num">
+      <a href="#L63">63</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:3 http://security.debian.org/debian-security buster/updates InRelease [65.4 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L64">
+    <th class="line-num">
+      <a href="#L64">64</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:4 https://download.rudder.io/rtf/apt/6.0 buster InRelease [10.9 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L65">
+    <th class="line-num">
+      <a href="#L65">65</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:5 http://deb.debian.org/debian buster/main Sources [7,840 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L66">
+    <th class="line-num">
+      <a href="#L66">66</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:6 https://download.rudder.io/rtf/apt/6.0 buster/main amd64 Packages [2,612 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L67">
+    <th class="line-num">
+      <a href="#L67">67</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:7 http://security.debian.org/debian-security buster/updates/main Sources [132 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L68">
+    <th class="line-num">
+      <a href="#L68">68</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:8 http://deb.debian.org/debian buster-updates/main Sources.diff/Index [3,688 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L69">
+    <th class="line-num">
+      <a href="#L69">69</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:9 http://security.debian.org/debian-security buster/updates/main amd64 Packages [217 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L70">
+    <th class="line-num">
+      <a href="#L70">70</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:10 http://deb.debian.org/debian buster-updates/main amd64 Packages.diff/Index [3,688 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L71">
+    <th class="line-num">
+      <a href="#L71">71</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:11 http://deb.debian.org/debian buster-updates/main Translation-en.diff/Index [3,196 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L72">
+    <th class="line-num">
+      <a href="#L72">72</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:12 http://security.debian.org/debian-security buster/updates/main Translation-en [118 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L73">
+    <th class="line-num">
+      <a href="#L73">73</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:13 http://deb.debian.org/debian buster-updates/main Sources 2020-02-23-2017.41.pdiff [924 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L74">
+    <th class="line-num">
+      <a href="#L74">74</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:14 http://deb.debian.org/debian buster-updates/main Sources 2020-06-04-2016.16.pdiff [239 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L75">
+    <th class="line-num">
+      <a href="#L75">75</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:15 http://deb.debian.org/debian buster-updates/main Sources 2020-06-07-1403.53.pdiff [540 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L76">
+    <th class="line-num">
+      <a href="#L76">76</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:16 http://deb.debian.org/debian buster-updates/main Sources 2020-06-13-2000.26.pdiff [690 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L77">
+    <th class="line-num">
+      <a href="#L77">77</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:16 http://deb.debian.org/debian buster-updates/main Sources 2020-06-13-2000.26.pdiff [690 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L78">
+    <th class="line-num">
+      <a href="#L78">78</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:17 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-02-23-2017.41.pdiff [2,162 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L79">
+    <th class="line-num">
+      <a href="#L79">79</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:18 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-06-04-2016.16.pdiff [1,101 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L80">
+    <th class="line-num">
+      <a href="#L80">80</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:19 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-06-07-1403.53.pdiff [439 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L81">
+    <th class="line-num">
+      <a href="#L81">81</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:20 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-06-13-2000.26.pdiff [552 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L82">
+    <th class="line-num">
+      <a href="#L82">82</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:20 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-06-13-2000.26.pdiff [552 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L83">
+    <th class="line-num">
+      <a href="#L83">83</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:21 http://deb.debian.org/debian buster-updates/main Translation-en 2020-02-23-2017.41.pdiff [1,700 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L84">
+    <th class="line-num">
+      <a href="#L84">84</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:22 http://deb.debian.org/debian buster-updates/main Translation-en 2020-06-07-1403.53.pdiff [368 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L85">
+    <th class="line-num">
+      <a href="#L85">85</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:23 http://deb.debian.org/debian buster-updates/main Translation-en 2020-06-13-2000.26.pdiff [423 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L86">
+    <th class="line-num">
+      <a href="#L86">86</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:23 http://deb.debian.org/debian buster-updates/main Translation-en 2020-06-13-2000.26.pdiff [423 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L87">
+    <th class="line-num">
+      <a href="#L87">87</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:24 http://deb.debian.org/debian buster/main amd64 Packages [7,906 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L88">
+    <th class="line-num">
+      <a href="#L88">88</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:25 http://deb.debian.org/debian buster/main Translation-en [5,968 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L89">
+    <th class="line-num">
+      <a href="#L89">89</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Fetched 22.5 MB in 5s (4,880 kB/s)
+</pre>
+    </td>
+  </tr>
+  <tr id="L90">
+    <th class="line-num">
+      <a href="#L90">90</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Reading package lists...
+</pre>
+    </td>
+  </tr>
+  <tr id="L91">
+    <th class="line-num">
+      <a href="#L91">91</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Reading package lists...
+</pre>
+    </td>
+  </tr>
+  <tr id="L92">
+    <th class="line-num">
+      <a href="#L92">92</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Building dependency tree...
+</pre>
+    </td>
+  </tr>
+  <tr id="L93">
+    <th class="line-num">
+      <a href="#L93">93</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Reading state information...
+</pre>
+    </td>
+  </tr>
+  <tr id="L94">
+    <th class="line-num">
+      <a href="#L94">94</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: The following additional packages will be installed:
+</pre>
+    </td>
+  </tr>
+  <tr id="L95">
+    <th class="line-num">
+      <a href="#L95">95</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:   libxml-treepp-perl libyaml-0-2 net-tools python3-bs4 python3-distutils
+</pre>
+    </td>
+  </tr>
+  <tr id="L96">
+    <th class="line-num">
+      <a href="#L96">96</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:   python3-html5lib python3-lib2to3 python3-lxml python3-soupsieve
+</pre>
+    </td>
+  </tr>
+  <tr id="L97">
+    <th class="line-num">
+      <a href="#L97">97</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:   python3-webencodings rudder-agent
+</pre>
+    </td>
+  </tr>
+  <tr id="L98">
+    <th class="line-num">
+      <a href="#L98">98</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Suggested packages:
+</pre>
+    </td>
+  </tr>
+  <tr id="L99">
+    <th class="line-num">
+      <a href="#L99">99</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:   python3-genshi python3-lxml-dbg python-lxml-doc
+</pre>
+    </td>
+  </tr>
+  <tr id="L100">
+    <th class="line-num">
+      <a href="#L100">100</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: The following NEW packages will be installed:
+</pre>
+    </td>
+  </tr>
+  <tr id="L101">
+    <th class="line-num">
+      <a href="#L101">101</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:   libxml-treepp-perl libyaml-0-2 net-tools python3-bs4 python3-distutils
+</pre>
+    </td>
+  </tr>
+  <tr id="L102">
+    <th class="line-num">
+      <a href="#L102">102</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:   python3-html5lib python3-lib2to3 python3-lxml python3-soupsieve
+</pre>
+    </td>
+  </tr>
+  <tr id="L103">
+    <th class="line-num">
+      <a href="#L103">103</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:   python3-webencodings rudder-agent rudder-server-relay
+</pre>
+    </td>
+  </tr>
+  <tr id="L104">
+    <th class="line-num">
+      <a href="#L104">104</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: 0 upgraded, 12 newly installed, 0 to remove and 81 not upgraded.
+</pre>
+    </td>
+  </tr>
+  <tr id="L105">
+    <th class="line-num">
+      <a href="#L105">105</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Need to get 9,929 kB of archives.
+</pre>
+    </td>
+  </tr>
+  <tr id="L106">
+    <th class="line-num">
+      <a href="#L106">106</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: After this operation, 61.7 MB of additional disk space will be used.
+</pre>
+    </td>
+  </tr>
+  <tr id="L107">
+    <th class="line-num">
+      <a href="#L107">107</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:1 http://deb.debian.org/debian buster/main amd64 libxml-treepp-perl all 0.43-1 [21.7 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L108">
+    <th class="line-num">
+      <a href="#L108">108</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:2 http://deb.debian.org/debian buster/main amd64 libyaml-0-2 amd64 0.2.1-1 [47.2 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L109">
+    <th class="line-num">
+      <a href="#L109">109</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:3 http://deb.debian.org/debian buster/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1 [248 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L110">
+    <th class="line-num">
+      <a href="#L110">110</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:4 https://download.rudder.io/rtf/apt/6.0 buster/main amd64 rudder-agent amd64 6.0.7-debian10 [5,777 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L111">
+    <th class="line-num">
+      <a href="#L111">111</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:5 http://deb.debian.org/debian buster/main amd64 python3-soupsieve all 1.8+dfsg-1 [27.6 kB
+</pre>
+    </td>
+  </tr>
+  <tr id="L112">
+    <th class="line-num">
+      <a href="#L112">112</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ]
+</pre>
+    </td>
+  </tr>
+  <tr id="L113">
+    <th class="line-num">
+      <a href="#L113">113</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:6 http://deb.debian.org/debian buster/main amd64 python3-bs4 all 4.7.1-1 [94.1 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L114">
+    <th class="line-num">
+      <a href="#L114">114</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:7 http://deb.debian.org/debian buster/main amd64 python3-lib2to3 all 3.7.3-1 [76.7 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L115">
+    <th class="line-num">
+      <a href="#L115">115</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:8 http://deb.debian.org/debian buster/main amd64 python3-distutils all 3.7.3-1 [142 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L116">
+    <th class="line-num">
+      <a href="#L116">116</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:9 http://deb.debian.org/debian buster/main amd64 python3-webencodings all 0.5.1-1 [10.9 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L117">
+    <th class="line-num">
+      <a href="#L117">117</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:10 http://deb.debian.org/debian buster/main amd64 python3-html5lib all 1.0.1-1 [89.5 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L118">
+    <th class="line-num">
+      <a href="#L118">118</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:11 http://deb.debian.org/debian buster/main amd64 python3-lxml amd64 4.3.2-1 [1,161 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L119">
+    <th class="line-num">
+      <a href="#L119">119</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Get:12 https://download.rudder.io/rtf/apt/6.0 buster/main amd64 rudder-server-relay amd64 6.0.7-debian10 [2,232 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L120">
+    <th class="line-num">
+      <a href="#L120">120</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preconfiguring packages ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L121">
+    <th class="line-num">
+      <a href="#L121">121</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Fetched 9,929 kB in 6s (1,655 kB/s)
+</pre>
+    </td>
+  </tr>
+  <tr id="L122">
+    <th class="line-num">
+      <a href="#L122">122</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package libxml-treepp-perl.
+</pre>
+    </td>
+  </tr>
+  <tr id="L123">
+    <th class="line-num">
+      <a href="#L123">123</a>
+    </th>
+    <td class="line-code">
+      <pre>(Reading database ... 59047 files and directories currently installed.)
+</pre>
+    </td>
+  </tr>
+  <tr id="L124">
+    <th class="line-num">
+      <a href="#L124">124</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../00-libxml-treepp-perl_0.43-1_all.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L125">
+    <th class="line-num">
+      <a href="#L125">125</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking libxml-treepp-perl (0.43-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L126">
+    <th class="line-num">
+      <a href="#L126">126</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package libyaml-0-2:amd64.
+</pre>
+    </td>
+  </tr>
+  <tr id="L127">
+    <th class="line-num">
+      <a href="#L127">127</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../01-libyaml-0-2_0.2.1-1_amd64.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L128">
+    <th class="line-num">
+      <a href="#L128">128</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking libyaml-0-2:amd64 (0.2.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L129">
+    <th class="line-num">
+      <a href="#L129">129</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package net-tools.
+</pre>
+    </td>
+  </tr>
+  <tr id="L130">
+    <th class="line-num">
+      <a href="#L130">130</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../02-net-tools_1.60+git20180626.aebd88e-1_amd64.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L131">
+    <th class="line-num">
+      <a href="#L131">131</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking net-tools (1.60+git20180626.aebd88e-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L132">
+    <th class="line-num">
+      <a href="#L132">132</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package python3-soupsieve.
+</pre>
+    </td>
+  </tr>
+  <tr id="L133">
+    <th class="line-num">
+      <a href="#L133">133</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../03-python3-soupsieve_1.8+dfsg-1_all.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L134">
+    <th class="line-num">
+      <a href="#L134">134</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking python3-soupsieve (1.8+dfsg-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L135">
+    <th class="line-num">
+      <a href="#L135">135</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package python3-bs4.
+</pre>
+    </td>
+  </tr>
+  <tr id="L136">
+    <th class="line-num">
+      <a href="#L136">136</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../04-python3-bs4_4.7.1-1_all.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L137">
+    <th class="line-num">
+      <a href="#L137">137</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking python3-bs4 (4.7.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L138">
+    <th class="line-num">
+      <a href="#L138">138</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package python3-lib2to3.
+</pre>
+    </td>
+  </tr>
+  <tr id="L139">
+    <th class="line-num">
+      <a href="#L139">139</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../05-python3-lib2to3_3.7.3-1_all.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L140">
+    <th class="line-num">
+      <a href="#L140">140</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking python3-lib2to3 (3.7.3-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L141">
+    <th class="line-num">
+      <a href="#L141">141</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package python3-distutils.
+</pre>
+    </td>
+  </tr>
+  <tr id="L142">
+    <th class="line-num">
+      <a href="#L142">142</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../06-python3-distutils_3.7.3-1_all.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L143">
+    <th class="line-num">
+      <a href="#L143">143</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking python3-distutils (3.7.3-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L144">
+    <th class="line-num">
+      <a href="#L144">144</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package python3-webencodings.
+</pre>
+    </td>
+  </tr>
+  <tr id="L145">
+    <th class="line-num">
+      <a href="#L145">145</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../07-python3-webencodings_0.5.1-1_all.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L146">
+    <th class="line-num">
+      <a href="#L146">146</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking python3-webencodings (0.5.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L147">
+    <th class="line-num">
+      <a href="#L147">147</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package python3-html5lib.
+</pre>
+    </td>
+  </tr>
+  <tr id="L148">
+    <th class="line-num">
+      <a href="#L148">148</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../08-python3-html5lib_1.0.1-1_all.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L149">
+    <th class="line-num">
+      <a href="#L149">149</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking python3-html5lib (1.0.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L150">
+    <th class="line-num">
+      <a href="#L150">150</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package python3-lxml:amd64.
+</pre>
+    </td>
+  </tr>
+  <tr id="L151">
+    <th class="line-num">
+      <a href="#L151">151</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../09-python3-lxml_4.3.2-1_amd64.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L152">
+    <th class="line-num">
+      <a href="#L152">152</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking python3-lxml:amd64 (4.3.2-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L153">
+    <th class="line-num">
+      <a href="#L153">153</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package rudder-agent.
+</pre>
+    </td>
+  </tr>
+  <tr id="L154">
+    <th class="line-num">
+      <a href="#L154">154</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../10-rudder-agent_6.0.7-debian10_amd64.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L155">
+    <th class="line-num">
+      <a href="#L155">155</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking rudder-agent (6.0.7-debian10) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L156">
+    <th class="line-num">
+      <a href="#L156">156</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Selecting previously unselected package rudder-server-relay.
+</pre>
+    </td>
+  </tr>
+  <tr id="L157">
+    <th class="line-num">
+      <a href="#L157">157</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Preparing to unpack .../11-rudder-server-relay_6.0.7-debian10_amd64.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L158">
+    <th class="line-num">
+      <a href="#L158">158</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Unpacking rudder-server-relay (6.0.7-debian10) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L159">
+    <th class="line-num">
+      <a href="#L159">159</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up net-tools (1.60+git20180626.aebd88e-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L160">
+    <th class="line-num">
+      <a href="#L160">160</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up libyaml-0-2:amd64 (0.2.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L161">
+    <th class="line-num">
+      <a href="#L161">161</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up python3-webencodings (0.5.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L162">
+    <th class="line-num">
+      <a href="#L162">162</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up libxml-treepp-perl (0.43-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L163">
+    <th class="line-num">
+      <a href="#L163">163</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up python3-html5lib (1.0.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L164">
+    <th class="line-num">
+      <a href="#L164">164</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up rudder-agent (6.0.7-debian10) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L165">
+    <th class="line-num">
+      <a href="#L165">165</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Created symlink /etc/systemd/system/multi-user.target.wants/rudder-agent.service → /lib/systemd/system/rudder-agent.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L166">
+    <th class="line-num">
+      <a href="#L166">166</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Created symlink /etc/systemd/system/multi-user.target.wants/rudder-cf-execd.service → /lib/systemd/system/rudder-cf-execd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L167">
+    <th class="line-num">
+      <a href="#L167">167</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Created symlink /etc/systemd/system/rudder-agent.service.requires/rudder-cf-execd.service → /lib/systemd/system/rudder-cf-execd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L168">
+    <th class="line-num">
+      <a href="#L168">168</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Created symlink
+</pre>
+    </td>
+  </tr>
+  <tr id="L169">
+    <th class="line-num">
+      <a href="#L169">169</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Agent is currently in bootstrap policies, cannot run an inventory, you need to download initial policies from the server
+</pre>
+    </td>
+  </tr>
+  <tr id="L170">
+    <th class="line-num">
+      <a href="#L170">170</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:  /etc/systemd/system/multi-user.target.wants/rudder-cf-serverd.service → /lib/systemd/system/rudder-cf-serverd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L171">
+    <th class="line-num">
+      <a href="#L171">171</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Created symlink /etc/systemd/system/rudder-agent.service.wants/rudder-cf-serverd.service → /lib/systemd/system/rudder-cf-serverd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L172">
+    <th class="line-num">
+      <a href="#L172">172</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: The UUID of the node does not exist and no backup exist. A new one will be generated... Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L173">
+    <th class="line-num">
+      <a href="#L173">173</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: Agent keys are missing, creating them ... Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L174">
+    <th class="line-num">
+      <a href="#L174">174</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: Agent certificate is missing, creating it... Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L175">
+    <th class="line-num">
+      <a href="#L175">175</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: Policies absent, restoring initial version, and updating ...   error: Unable to resolve policy server host: rudder
+</pre>
+    </td>
+  </tr>
+  <tr id="L176">
+    <th class="line-num">
+      <a href="#L176">176</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:    error: Unable to resolve policy server host: rudder
+</pre>
+    </td>
+  </tr>
+  <tr id="L177">
+    <th class="line-num">
+      <a href="#L177">177</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:    error: No suitable server found
+</pre>
+    </td>
+  </tr>
+  <tr id="L178">
+    <th class="line-num">
+      <a href="#L178">178</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:    error: No suitable server found
+</pre>
+    </td>
+  </tr>
+  <tr id="L179">
+    <th class="line-num">
+      <a href="#L179">179</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: R: Initial policies have been successfully downloaded from the policy server
+</pre>
+    </td>
+  </tr>
+  <tr id="L180">
+    <th class="line-num">
+      <a href="#L180">180</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: error: Rudder agent promises could not be updated.
+</pre>
+    </td>
+  </tr>
+  <tr id="L181">
+    <th class="line-num">
+      <a href="#L181">181</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ok: Rudder agent state has been reset.
+</pre>
+    </td>
+  </tr>
+  <tr id="L182">
+    <th class="line-num">
+      <a href="#L182">182</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L183">
+    <th class="line-num">
+      <a href="#L183">183</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: No disable file detected and no agent executor process either. Restarting agent service...rudder-cf-serverd: enabled
+</pre>
+    </td>
+  </tr>
+  <tr id="L184">
+    <th class="line-num">
+      <a href="#L184">184</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: rudder-cf-execd: enabled
+</pre>
+    </td>
+  </tr>
+  <tr id="L185">
+    <th class="line-num">
+      <a href="#L185">185</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ok: stop service rudder-agent succeeded
+</pre>
+    </td>
+  </tr>
+  <tr id="L186">
+    <th class="line-num">
+      <a href="#L186">186</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: rudder-cf-serverd: enabled
+</pre>
+    </td>
+  </tr>
+  <tr id="L187">
+    <th class="line-num">
+      <a href="#L187">187</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: rudder-cf-execd: enabled
+</pre>
+    </td>
+  </tr>
+  <tr id="L188">
+    <th class="line-num">
+      <a href="#L188">188</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ok: start service rudder-agent succeeded
+</pre>
+    </td>
+  </tr>
+  <tr id="L189">
+    <th class="line-num">
+      <a href="#L189">189</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L190">
+    <th class="line-num">
+      <a href="#L190">190</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: Inventory older than 3 days, resending ...Agent is currently in bootstrap policies, cannot run an inventory, you need to download initial policies from the server
+</pre>
+    </td>
+  </tr>
+  <tr id="L191">
+    <th class="line-num">
+      <a href="#L191">191</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L192">
+    <th class="line-num">
+      <a href="#L192">192</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: FINISH: Rudder agent check ran properly, please look at messages above to see if there has been any error.
+</pre>
+    </td>
+  </tr>
+  <tr id="L193">
+    <th class="line-num">
+      <a href="#L193">193</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up python3-lxml:amd64 (4.3.2-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L194">
+    <th class="line-num">
+      <a href="#L194">194</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up python3-lib2to3 (3.7.3-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L195">
+    <th class="line-num">
+      <a href="#L195">195</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up python3-soupsieve (1.8+dfsg-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L196">
+    <th class="line-num">
+      <a href="#L196">196</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up python3-distutils (3.7.3-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L197">
+    <th class="line-num">
+      <a href="#L197">197</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up rudder-server-relay (6.0.7-debian10) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L198">
+    <th class="line-num">
+      <a href="#L198">198</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: Creating users ... Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L199">
+    <th class="line-num">
+      <a href="#L199">199</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: Configuring systemd services...Created symlink /etc/systemd/system/multi-user.target.wants/rudder-relayd.service → /lib/systemd/system/rudder-relayd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L200">
+    <th class="line-num">
+      <a href="#L200">200</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Created symlink /etc/systemd/system/rudder-server.service.requires/rudder-relayd.service → /lib/systemd/system/rudder-relayd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L201">
+    <th class="line-num">
+      <a href="#L201">201</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L202">
+    <th class="line-num">
+      <a href="#L202">202</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: No usable SSL certificate detected for Rudder relay HTTPS support, generating one automatically...Generating a RSA private key
+</pre>
+    </td>
+  </tr>
+  <tr id="L203">
+    <th class="line-num">
+      <a href="#L203">203</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ..+++++
+</pre>
+    </td>
+  </tr>
+  <tr id="L204">
+    <th class="line-num">
+      <a href="#L204">204</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: ..............+++++
+</pre>
+    </td>
+  </tr>
+  <tr id="L205">
+    <th class="line-num">
+      <a href="#L205">205</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: writing new private key to '/opt/rudder/etc/ssl/rudder.key'
+</pre>
+    </td>
+  </tr>
+  <tr id="L206">
+    <th class="line-num">
+      <a href="#L206">206</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: -----
+</pre>
+    </td>
+  </tr>
+  <tr id="L207">
+    <th class="line-num">
+      <a href="#L207">207</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L208">
+    <th class="line-num">
+      <a href="#L208">208</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: Starting services... Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L209">
+    <th class="line-num">
+      <a href="#L209">209</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: rudder-server-relay setup complete.
+</pre>
+    </td>
+  </tr>
+  <tr id="L210">
+    <th class="line-num">
+      <a href="#L210">210</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay:
+</pre>
+    </td>
+  </tr>
+  <tr id="L211">
+    <th class="line-num">
+      <a href="#L211">211</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: *****************************************************************************************
+</pre>
+    </td>
+  </tr>
+  <tr id="L212">
+    <th class="line-num">
+      <a href="#L212">212</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: Now run on your root server:
+</pre>
+    </td>
+  </tr>
+  <tr id="L213">
+    <th class="line-num">
+      <a href="#L213">213</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO:   '/opt/rudder/bin/rudder-node-to-relay b18a83af-cca2-4ab6-96b2-5448205d8f22
+</pre>
+    </td>
+  </tr>
+  <tr id="L214">
+    <th class="line-num">
+      <a href="#L214">214</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: INFO: Please look at the documentation for details (Section 'Relay servers')
+</pre>
+    </td>
+  </tr>
+  <tr id="L215">
+    <th class="line-num">
+      <a href="#L215">215</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: *****************************************************************************************
+</pre>
+    </td>
+  </tr>
+  <tr id="L216">
+    <th class="line-num">
+      <a href="#L216">216</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Setting up python3-bs4 (4.7.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L217">
+    <th class="line-num">
+      <a href="#L217">217</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Processing triggers for man-db (2.8.5-2) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L218">
+    <th class="line-num">
+      <a href="#L218">218</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_relay: Processing triggers for libc-bin (2.28-10) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L219">
+    <th class="line-num">
+      <a href="#L219">219</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Running action triggers after up ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L220">
+    <th class="line-num">
+      <a href="#L220">220</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_relay: Running trigger...
+</pre>
+    </td>
+  </tr>
+  <tr id="L221">
+    <th class="line-num">
+      <a href="#L221">221</a>
+    </th>
+    <td class="line-code">
+      <pre>Bringing machine 'dev_agent1' up with 'virtualbox' provider...
+</pre>
+    </td>
+  </tr>
+  <tr id="L222">
+    <th class="line-num">
+      <a href="#L222">222</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Importing base box 'normation/debian-10-64'...
+</pre>
+    </td>
+  </tr>
+  <tr id="L223">
+    <th class="line-num">
+      <a href="#L223">223</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Matching MAC address for NAT networking...
+</pre>
+    </td>
+  </tr>
+  <tr id="L224">
+    <th class="line-num">
+      <a href="#L224">224</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Checking if box 'normation/debian-10-64' version '1.0' is up to date...
+</pre>
+    </td>
+  </tr>
+  <tr id="L225">
+    <th class="line-num">
+      <a href="#L225">225</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Setting the name of the VM: dev_agent1
+</pre>
+    </td>
+  </tr>
+  <tr id="L226">
+    <th class="line-num">
+      <a href="#L226">226</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Fixed port collision for 22 =&gt; 2222. Now on port 2200.
+</pre>
+    </td>
+  </tr>
+  <tr id="L227">
+    <th class="line-num">
+      <a href="#L227">227</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Clearing any previously set network interfaces...
+</pre>
+    </td>
+  </tr>
+  <tr id="L228">
+    <th class="line-num">
+      <a href="#L228">228</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Preparing network interfaces based on configuration...
+</pre>
+    </td>
+  </tr>
+  <tr id="L229">
+    <th class="line-num">
+      <a href="#L229">229</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Adapter 1: nat
+</pre>
+    </td>
+  </tr>
+  <tr id="L230">
+    <th class="line-num">
+      <a href="#L230">230</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Adapter 2: hostonly
+</pre>
+    </td>
+  </tr>
+  <tr id="L231">
+    <th class="line-num">
+      <a href="#L231">231</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Forwarding ports...
+</pre>
+    </td>
+  </tr>
+  <tr id="L232">
+    <th class="line-num">
+      <a href="#L232">232</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: 22 (guest) =&gt; 2200 (host) (adapter 1)
+</pre>
+    </td>
+  </tr>
+  <tr id="L233">
+    <th class="line-num">
+      <a href="#L233">233</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Running 'pre-boot' VM customizations...
+</pre>
+    </td>
+  </tr>
+  <tr id="L234">
+    <th class="line-num">
+      <a href="#L234">234</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Booting VM...
+</pre>
+    </td>
+  </tr>
+  <tr id="L235">
+    <th class="line-num">
+      <a href="#L235">235</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Waiting for machine to boot. This may take a few minutes...
+</pre>
+    </td>
+  </tr>
+  <tr id="L236">
+    <th class="line-num">
+      <a href="#L236">236</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: SSH address: 127.0.0.1:2200
+</pre>
+    </td>
+  </tr>
+  <tr id="L237">
+    <th class="line-num">
+      <a href="#L237">237</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: SSH username: vagrant
+</pre>
+    </td>
+  </tr>
+  <tr id="L238">
+    <th class="line-num">
+      <a href="#L238">238</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: SSH auth method: private key
+</pre>
+    </td>
+  </tr>
+  <tr id="L239">
+    <th class="line-num">
+      <a href="#L239">239</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:
+</pre>
+    </td>
+  </tr>
+  <tr id="L240">
+    <th class="line-num">
+      <a href="#L240">240</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Vagrant insecure key detected. Vagrant will automatically replace
+</pre>
+    </td>
+  </tr>
+  <tr id="L241">
+    <th class="line-num">
+      <a href="#L241">241</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: this with a newly generated keypair for better security.
+</pre>
+    </td>
+  </tr>
+  <tr id="L242">
+    <th class="line-num">
+      <a href="#L242">242</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:
+</pre>
+    </td>
+  </tr>
+  <tr id="L243">
+    <th class="line-num">
+      <a href="#L243">243</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Inserting generated public key within guest...
+</pre>
+    </td>
+  </tr>
+  <tr id="L244">
+    <th class="line-num">
+      <a href="#L244">244</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Removing insecure key from the guest if it's present...
+</pre>
+    </td>
+  </tr>
+  <tr id="L245">
+    <th class="line-num">
+      <a href="#L245">245</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Key inserted! Disconnecting and reconnecting using new SSH key...
+</pre>
+    </td>
+  </tr>
+  <tr id="L246">
+    <th class="line-num">
+      <a href="#L246">246</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Machine booted and ready!
+</pre>
+    </td>
+  </tr>
+  <tr id="L247">
+    <th class="line-num">
+      <a href="#L247">247</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Checking for guest additions in VM...
+</pre>
+    </td>
+  </tr>
+  <tr id="L248">
+    <th class="line-num">
+      <a href="#L248">248</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Setting hostname...
+</pre>
+    </td>
+  </tr>
+  <tr id="L249">
+    <th class="line-num">
+      <a href="#L249">249</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Configuring and enabling network interfaces...
+</pre>
+    </td>
+  </tr>
+  <tr id="L250">
+    <th class="line-num">
+      <a href="#L250">250</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Mounting shared folders...
+</pre>
+    </td>
+  </tr>
+  <tr id="L251">
+    <th class="line-num">
+      <a href="#L251">251</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: /vagrant =&gt; /home/elaad/rudder-tests
+</pre>
+    </td>
+  </tr>
+  <tr id="L252">
+    <th class="line-num">
+      <a href="#L252">252</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Running provisioner: shell...
+</pre>
+    </td>
+  </tr>
+  <tr id="L253">
+    <th class="line-num">
+      <a href="#L253">253</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Running: inline script
+</pre>
+    </td>
+  </tr>
+  <tr id="L254">
+    <th class="line-num">
+      <a href="#L254">254</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ echo 'Starting VM setup'
+</pre>
+    </td>
+  </tr>
+  <tr id="L255">
+    <th class="line-num">
+      <a href="#L255">255</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Starting VM setup
+</pre>
+    </td>
+  </tr>
+  <tr id="L256">
+    <th class="line-num">
+      <a href="#L256">256</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ /vagrant/scripts/cleanbox.sh /vagrant
+</pre>
+    </td>
+  </tr>
+  <tr id="L257">
+    <th class="line-num">
+      <a href="#L257">257</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ /vagrant/scripts/network.sh 192.168.2 2 'relay agent1 agent2 server'
+</pre>
+    </td>
+  </tr>
+  <tr id="L258">
+    <th class="line-num">
+      <a href="#L258">258</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ set +x
+</pre>
+    </td>
+  </tr>
+  <tr id="L259">
+    <th class="line-num">
+      <a href="#L259">259</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ head -n 1G
+</pre>
+    </td>
+  </tr>
+  <tr id="L260">
+    <th class="line-num">
+      <a href="#L260">260</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ http_proxy=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L261">
+    <th class="line-num">
+      <a href="#L261">261</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ https_proxy=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L262">
+    <th class="line-num">
+      <a href="#L262">262</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ HTTP_PROXY=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L263">
+    <th class="line-num">
+      <a href="#L263">263</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ HTTPS_PROXY=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L264">
+    <th class="line-num">
+      <a href="#L264">264</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ PLUGINS_VERSION=
+</pre>
+    </td>
+  </tr>
+  <tr id="L265">
+    <th class="line-num">
+      <a href="#L265">265</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ FORGET_CREDENTIALS=
+</pre>
+    </td>
+  </tr>
+  <tr id="L266">
+    <th class="line-num">
+      <a href="#L266">266</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ DISABLE_AUTODETECT_NETWORKS=yes
+</pre>
+    </td>
+  </tr>
+  <tr id="L267">
+    <th class="line-num">
+      <a href="#L267">267</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ ALLOWEDNETWORK=192.168.2.0/24
+</pre>
+    </td>
+  </tr>
+  <tr id="L268">
+    <th class="line-num">
+      <a href="#L268">268</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ UNSUPPORTED=
+</pre>
+    </td>
+  </tr>
+  <tr id="L269">
+    <th class="line-num">
+      <a href="#L269">269</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ ADMIN_PASSWORD=admin
+</pre>
+    </td>
+  </tr>
+  <tr id="L270">
+    <th class="line-num">
+      <a href="#L270">270</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ REPO_PREFIX=rtf/
+</pre>
+    </td>
+  </tr>
+  <tr id="L271">
+    <th class="line-num">
+      <a href="#L271">271</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ++ /usr/local/bin/rudder-setup setup-agent 6.0 relay
+</pre>
+    </td>
+  </tr>
+  <tr id="L272">
+    <th class="line-num">
+      <a href="#L272">272</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Warning: apt-key output should not be parsed (stdout is not a terminal)
+</pre>
+    </td>
+  </tr>
+  <tr id="L273">
+    <th class="line-num">
+      <a href="#L273">273</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Reading package lists...
+</pre>
+    </td>
+  </tr>
+  <tr id="L274">
+    <th class="line-num">
+      <a href="#L274">274</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Building dependency tree...
+</pre>
+    </td>
+  </tr>
+  <tr id="L275">
+    <th class="line-num">
+      <a href="#L275">275</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Reading state information...
+</pre>
+    </td>
+  </tr>
+  <tr id="L276">
+    <th class="line-num">
+      <a href="#L276">276</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: apt-transport-https is already the newest version (1.8.2).
+</pre>
+    </td>
+  </tr>
+  <tr id="L277">
+    <th class="line-num">
+      <a href="#L277">277</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+</pre>
+    </td>
+  </tr>
+  <tr id="L278">
+    <th class="line-num">
+      <a href="#L278">278</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: OK
+</pre>
+    </td>
+  </tr>
+  <tr id="L279">
+    <th class="line-num">
+      <a href="#L279">279</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:1 http://security.debian.org/debian-security buster/updates InRelease [65.4 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L280">
+    <th class="line-num">
+      <a href="#L280">280</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:2 https://download.rudder.io/rtf/apt/6.0 buster InRelease [10.9 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L281">
+    <th class="line-num">
+      <a href="#L281">281</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:3 http://deb.debian.org/debian buster InRelease [122 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L282">
+    <th class="line-num">
+      <a href="#L282">282</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:4 http://security.debian.org/debian-security buster/updates/main Sources [132 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L283">
+    <th class="line-num">
+      <a href="#L283">283</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:5 http://deb.debian.org/debian buster-updates InRelease [51.9 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L284">
+    <th class="line-num">
+      <a href="#L284">284</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:6 http://security.debian.org/debian-security buster/updates/main amd64 Packages [217 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L285">
+    <th class="line-num">
+      <a href="#L285">285</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:7 http://security.debian.org/debian-security buster/updates/main Translation-en [118 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L286">
+    <th class="line-num">
+      <a href="#L286">286</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:8 https://download.rudder.io/rtf/apt/6.0 buster/main amd64 Packages [2,612 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L287">
+    <th class="line-num">
+      <a href="#L287">287</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:9 http://deb.debian.org/debian buster/main Sources [7,840 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L288">
+    <th class="line-num">
+      <a href="#L288">288</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:10 http://deb.debian.org/debian buster-updates/main Sources.diff/Index [3,688 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L289">
+    <th class="line-num">
+      <a href="#L289">289</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:11 http://deb.debian.org/debian buster-updates/main amd64 Packages.diff/Index [3,688 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L290">
+    <th class="line-num">
+      <a href="#L290">290</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:12 http://deb.debian.org/debian buster-updates/main Translation-en.diff/Index [3,196 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L291">
+    <th class="line-num">
+      <a href="#L291">291</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:13 http://deb.debian.org/debian buster-updates/main Sources 2020-02-23-2017.41.pdiff [924 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L292">
+    <th class="line-num">
+      <a href="#L292">292</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:14 http://deb.debian.org/debian buster-updates/main Sources 2020-06-04-2016.16.pdiff [239 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L293">
+    <th class="line-num">
+      <a href="#L293">293</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:15 http://deb.debian.org/debian buster-updates/main Sources 2020-06-07-1403.53.pdiff [540 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L294">
+    <th class="line-num">
+      <a href="#L294">294</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:16 http://deb.debian.org/debian buster-updates/main Sources 2020-06-13-2000.26.pdiff [690 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L295">
+    <th class="line-num">
+      <a href="#L295">295</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:17 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-02-23-2017.41.pdiff [2,162 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L296">
+    <th class="line-num">
+      <a href="#L296">296</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:18 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-06-04-2016.16.pdiff [1,101 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L297">
+    <th class="line-num">
+      <a href="#L297">297</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:19 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-06-07-1403.53.pdiff [439 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L298">
+    <th class="line-num">
+      <a href="#L298">298</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:20 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-06-13-2000.26.pdiff [552 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L299">
+    <th class="line-num">
+      <a href="#L299">299</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:16 http://deb.debian.org/debian buster-updates/main Sources 2020-06-13-2000.26.pdiff [690 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L300">
+    <th class="line-num">
+      <a href="#L300">300</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:20 http://deb.debian.org/debian buster-updates/main amd64 Packages 2020-06-13-2000.26.pdiff [552 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L301">
+    <th class="line-num">
+      <a href="#L301">301</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:21 http://deb.debian.org/debian buster-updates/main Translation-en 2020-02-23-2017.41.pdiff [1,700 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L302">
+    <th class="line-num">
+      <a href="#L302">302</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:22 http://deb.debian.org/debian buster-updates/main Translation-en 2020-06-07-1403.53.pdiff [368 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L303">
+    <th class="line-num">
+      <a href="#L303">303</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:23 http://deb.debian.org/debian buster-updates/main Translation-en 2020-06-13-2000.26.pdiff [423 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L304">
+    <th class="line-num">
+      <a href="#L304">304</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:23 http://deb.debian.org/debian buster-updates/main Translation-en 2020-06-13-2000.26.pdiff [423 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L305">
+    <th class="line-num">
+      <a href="#L305">305</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:24 http://deb.debian.org/debian buster/main amd64 Packages [7,906 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L306">
+    <th class="line-num">
+      <a href="#L306">306</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:25 http://deb.debian.org/debian buster/main Translation-en [5,968 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L307">
+    <th class="line-num">
+      <a href="#L307">307</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Fetched 22.5 MB in 5s (4,756 kB/s)
+</pre>
+    </td>
+  </tr>
+  <tr id="L308">
+    <th class="line-num">
+      <a href="#L308">308</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Reading package lists...
+</pre>
+    </td>
+  </tr>
+  <tr id="L309">
+    <th class="line-num">
+      <a href="#L309">309</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Reading package lists...
+</pre>
+    </td>
+  </tr>
+  <tr id="L310">
+    <th class="line-num">
+      <a href="#L310">310</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Building dependency tree...
+</pre>
+    </td>
+  </tr>
+  <tr id="L311">
+    <th class="line-num">
+      <a href="#L311">311</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Reading state information...
+</pre>
+    </td>
+  </tr>
+  <tr id="L312">
+    <th class="line-num">
+      <a href="#L312">312</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: The following additional packages will be installed:
+</pre>
+    </td>
+  </tr>
+  <tr id="L313">
+    <th class="line-num">
+      <a href="#L313">313</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:   libxml-treepp-perl libyaml-0-2 net-tools
+</pre>
+    </td>
+  </tr>
+  <tr id="L314">
+    <th class="line-num">
+      <a href="#L314">314</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: The following NEW packages will be installed:
+</pre>
+    </td>
+  </tr>
+  <tr id="L315">
+    <th class="line-num">
+      <a href="#L315">315</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:   libxml-treepp-perl libyaml-0-2 net-tools rudder-agent
+</pre>
+    </td>
+  </tr>
+  <tr id="L316">
+    <th class="line-num">
+      <a href="#L316">316</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: 0 upgraded, 4 newly installed, 0 to remove and 81 not upgraded.
+</pre>
+    </td>
+  </tr>
+  <tr id="L317">
+    <th class="line-num">
+      <a href="#L317">317</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Need to get 6,094 kB of archives.
+</pre>
+    </td>
+  </tr>
+  <tr id="L318">
+    <th class="line-num">
+      <a href="#L318">318</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: After this operation, 46.4 MB of additional disk space will be used.
+</pre>
+    </td>
+  </tr>
+  <tr id="L319">
+    <th class="line-num">
+      <a href="#L319">319</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:1 http://deb.debian.org/debian buster/main amd64 libxml-treepp-perl all 0.43-1 [21.7 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L320">
+    <th class="line-num">
+      <a href="#L320">320</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:2 http://deb.debian.org/debian buster/main amd64 libyaml-0-2 amd64 0.2.1-1 [47.2 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L321">
+    <th class="line-num">
+      <a href="#L321">321</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:3 http://deb.debian.org/debian buster/main amd64 net-tools amd64 1.60+git20180626.aebd88e-1 [248 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L322">
+    <th class="line-num">
+      <a href="#L322">322</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Get:4 https://download.rudder.io/rtf/apt/6.0 buster/main amd64 rudder-agent amd64 6.0.7-debian10 [5,777 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L323">
+    <th class="line-num">
+      <a href="#L323">323</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Preconfiguring packages ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L324">
+    <th class="line-num">
+      <a href="#L324">324</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Fetched 6,094 kB in 4s (1,395 kB/s)
+</pre>
+    </td>
+  </tr>
+  <tr id="L325">
+    <th class="line-num">
+      <a href="#L325">325</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Selecting previously unselected package libxml-treepp-perl.
+</pre>
+    </td>
+  </tr>
+  <tr id="L326">
+    <th class="line-num">
+      <a href="#L326">326</a>
+    </th>
+    <td class="line-code">
+      <pre>(Reading database ... 55%database ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L327">
+    <th class="line-num">
+      <a href="#L327">327</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Agent is currently in bootstrap policies, cannot run an inventory, you need to download initial policies from the server
+</pre>
+    </td>
+  </tr>
+  <tr id="L328">
+    <th class="line-num">
+      <a href="#L328">328</a>
+    </th>
+    <td class="line-code">
+      <pre>(Reading database ... 59047 files and directories currently installed.)
+</pre>
+    </td>
+  </tr>
+  <tr id="L329">
+    <th class="line-num">
+      <a href="#L329">329</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Preparing to unpack .../libxml-treepp-perl_0.43-1_all.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L330">
+    <th class="line-num">
+      <a href="#L330">330</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Unpacking libxml-treepp-perl (0.43-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L331">
+    <th class="line-num">
+      <a href="#L331">331</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Selecting previously unselected package libyaml-0-2:amd64.
+</pre>
+    </td>
+  </tr>
+  <tr id="L332">
+    <th class="line-num">
+      <a href="#L332">332</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Preparing to unpack .../libyaml-0-2_0.2.1-1_amd64.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L333">
+    <th class="line-num">
+      <a href="#L333">333</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Unpacking libyaml-0-2:amd64 (0.2.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L334">
+    <th class="line-num">
+      <a href="#L334">334</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Selecting previously unselected package net-tools.
+</pre>
+    </td>
+  </tr>
+  <tr id="L335">
+    <th class="line-num">
+      <a href="#L335">335</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Preparing to unpack .../net-tools_1.60+git20180626.aebd88e-1_amd64.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L336">
+    <th class="line-num">
+      <a href="#L336">336</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Unpacking net-tools (1.60+git20180626.aebd88e-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L337">
+    <th class="line-num">
+      <a href="#L337">337</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Selecting previously unselected package rudder-agent.
+</pre>
+    </td>
+  </tr>
+  <tr id="L338">
+    <th class="line-num">
+      <a href="#L338">338</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Preparing to unpack .../rudder-agent_6.0.7-debian10_amd64.deb ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L339">
+    <th class="line-num">
+      <a href="#L339">339</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Unpacking rudder-agent (6.0.7-debian10) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L340">
+    <th class="line-num">
+      <a href="#L340">340</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Setting up net-tools (1.60+git20180626.aebd88e-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L341">
+    <th class="line-num">
+      <a href="#L341">341</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Setting up libyaml-0-2:amd64 (0.2.1-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L342">
+    <th class="line-num">
+      <a href="#L342">342</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Setting up libxml-treepp-perl (0.43-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L343">
+    <th class="line-num">
+      <a href="#L343">343</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Setting up rudder-agent (6.0.7-debian10) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L344">
+    <th class="line-num">
+      <a href="#L344">344</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Created symlink /etc/systemd/system/multi-user.target.wants/rudder-agent.service → /lib/systemd/system/rudder-agent.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L345">
+    <th class="line-num">
+      <a href="#L345">345</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Created symlink /etc/systemd/system/multi-user.target.wants/rudder-cf-execd.service → /lib/systemd/system/rudder-cf-execd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L346">
+    <th class="line-num">
+      <a href="#L346">346</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Created symlink /etc/systemd/system/rudder-agent.service.requires/rudder-cf-execd.service → /lib/systemd/system/rudder-cf-execd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L347">
+    <th class="line-num">
+      <a href="#L347">347</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Created symlink /etc/systemd/system/multi-user.target.wants/rudder-cf-serverd.service → /lib/systemd/system/rudder-cf-serverd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L348">
+    <th class="line-num">
+      <a href="#L348">348</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Created symlink /etc/systemd/system/rudder-agent.service.wants/rudder-cf-serverd.service → /lib/systemd/system/rudder-cf-serverd.service.
+</pre>
+    </td>
+  </tr>
+  <tr id="L349">
+    <th class="line-num">
+      <a href="#L349">349</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: INFO: The UUID of the node does not exist and no backup exist. A new one will be generated... Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L350">
+    <th class="line-num">
+      <a href="#L350">350</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: INFO: Agent keys are missing, creating them ... Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L351">
+    <th class="line-num">
+      <a href="#L351">351</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: INFO: Agent certificate is missing, creating it... Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L352">
+    <th class="line-num">
+      <a href="#L352">352</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: INFO: Policies absent, restoring initial version, and updating ...  notice: Trusting new key: MD5=15c951ce8d0ee836a8918f8f9ab1b50d
+</pre>
+    </td>
+  </tr>
+  <tr id="L353">
+    <th class="line-num">
+      <a href="#L353">353</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:    error: Connection unexpectedly closed (SSL_read): socket closed
+</pre>
+    </td>
+  </tr>
+  <tr id="L354">
+    <th class="line-num">
+      <a href="#L354">354</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:    error: Connection was hung up while receiving line:
+</pre>
+    </td>
+  </tr>
+  <tr id="L355">
+    <th class="line-num">
+      <a href="#L355">355</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:    error: Connection was hung up during identification! (3)
+</pre>
+    </td>
+  </tr>
+  <tr id="L356">
+    <th class="line-num">
+      <a href="#L356">356</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:    error: No suitable server found
+</pre>
+    </td>
+  </tr>
+  <tr id="L357">
+    <th class="line-num">
+      <a href="#L357">357</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:    error: Connection unexpectedly closed (SSL_read): socket closed
+</pre>
+    </td>
+  </tr>
+  <tr id="L358">
+    <th class="line-num">
+      <a href="#L358">358</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:    error: Connection was hung up while receiving line:
+</pre>
+    </td>
+  </tr>
+  <tr id="L359">
+    <th class="line-num">
+      <a href="#L359">359</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:    error: Connection was hung up during identification! (3)
+</pre>
+    </td>
+  </tr>
+  <tr id="L360">
+    <th class="line-num">
+      <a href="#L360">360</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:    error: No suitable server found
+</pre>
+    </td>
+  </tr>
+  <tr id="L361">
+    <th class="line-num">
+      <a href="#L361">361</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: R: Initial policies have been successfully downloaded from the policy server
+</pre>
+    </td>
+  </tr>
+  <tr id="L362">
+    <th class="line-num">
+      <a href="#L362">362</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: error: Rudder agent promises could not be updated.
+</pre>
+    </td>
+  </tr>
+  <tr id="L363">
+    <th class="line-num">
+      <a href="#L363">363</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ok: Rudder agent state has been reset.
+</pre>
+    </td>
+  </tr>
+  <tr id="L364">
+    <th class="line-num">
+      <a href="#L364">364</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L365">
+    <th class="line-num">
+      <a href="#L365">365</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: INFO: No disable file detected and no agent executor process either. Restarting agent service...rudder-cf-serverd: enabled
+</pre>
+    </td>
+  </tr>
+  <tr id="L366">
+    <th class="line-num">
+      <a href="#L366">366</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: rudder-cf-execd: enabled
+</pre>
+    </td>
+  </tr>
+  <tr id="L367">
+    <th class="line-num">
+      <a href="#L367">367</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ok: stop service rudder-agent succeeded
+</pre>
+    </td>
+  </tr>
+  <tr id="L368">
+    <th class="line-num">
+      <a href="#L368">368</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: rudder-cf-serverd: enabled
+</pre>
+    </td>
+  </tr>
+  <tr id="L369">
+    <th class="line-num">
+      <a href="#L369">369</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: rudder-cf-execd: enabled
+</pre>
+    </td>
+  </tr>
+  <tr id="L370">
+    <th class="line-num">
+      <a href="#L370">370</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: ok: start service rudder-agent succeeded
+</pre>
+    </td>
+  </tr>
+  <tr id="L371">
+    <th class="line-num">
+      <a href="#L371">371</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L372">
+    <th class="line-num">
+      <a href="#L372">372</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: INFO: Inventory older than 3 days, resending ...Agent is currently in bootstrap policies, cannot run an inventory, you need to download initial policies from the server
+</pre>
+    </td>
+  </tr>
+  <tr id="L373">
+    <th class="line-num">
+      <a href="#L373">373</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L374">
+    <th class="line-num">
+      <a href="#L374">374</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: FINISH: Rudder agent check ran properly, please look at messages above to see if there has been any error.
+</pre>
+    </td>
+  </tr>
+  <tr id="L375">
+    <th class="line-num">
+      <a href="#L375">375</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Processing triggers for man-db (2.8.5-2) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L376">
+    <th class="line-num">
+      <a href="#L376">376</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent1: Processing triggers for libc-bin (2.28-10) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L377">
+    <th class="line-num">
+      <a href="#L377">377</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Running action triggers after up ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L378">
+    <th class="line-num">
+      <a href="#L378">378</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent1: Running trigger...
+</pre>
+    </td>
+  </tr>
+  <tr id="L379">
+    <th class="line-num">
+      <a href="#L379">379</a>
+    </th>
+    <td class="line-code">
+      <pre>Bringing machine 'dev_agent2' up with 'virtualbox' provider...
+</pre>
+    </td>
+  </tr>
+  <tr id="L380">
+    <th class="line-num">
+      <a href="#L380">380</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Importing base box 'normation/debian-6-64'...
+</pre>
+    </td>
+  </tr>
+  <tr id="L381">
+    <th class="line-num">
+      <a href="#L381">381</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Matching MAC address for NAT networking...
+</pre>
+    </td>
+  </tr>
+  <tr id="L382">
+    <th class="line-num">
+      <a href="#L382">382</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Checking if box 'normation/debian-6-64' version '1.0' is up to date...
+</pre>
+    </td>
+  </tr>
+  <tr id="L383">
+    <th class="line-num">
+      <a href="#L383">383</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: A newer version of the box 'normation/debian-6-64' for provider 'virtualbox' is
+</pre>
+    </td>
+  </tr>
+  <tr id="L384">
+    <th class="line-num">
+      <a href="#L384">384</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: available! You currently have version '1.0'. The latest is version
+</pre>
+    </td>
+  </tr>
+  <tr id="L385">
+    <th class="line-num">
+      <a href="#L385">385</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: '2.0'. Run `vagrant box update` to update.
+</pre>
+    </td>
+  </tr>
+  <tr id="L386">
+    <th class="line-num">
+      <a href="#L386">386</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Setting the name of the VM: dev_agent2
+</pre>
+    </td>
+  </tr>
+  <tr id="L387">
+    <th class="line-num">
+      <a href="#L387">387</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Fixed port collision for 22 =&gt; 2222. Now on port 2201.
+</pre>
+    </td>
+  </tr>
+  <tr id="L388">
+    <th class="line-num">
+      <a href="#L388">388</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Clearing any previously set network interfaces...
+</pre>
+    </td>
+  </tr>
+  <tr id="L389">
+    <th class="line-num">
+      <a href="#L389">389</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Preparing network interfaces based on configuration...
+</pre>
+    </td>
+  </tr>
+  <tr id="L390">
+    <th class="line-num">
+      <a href="#L390">390</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Adapter 1: nat
+</pre>
+    </td>
+  </tr>
+  <tr id="L391">
+    <th class="line-num">
+      <a href="#L391">391</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Adapter 2: hostonly
+</pre>
+    </td>
+  </tr>
+  <tr id="L392">
+    <th class="line-num">
+      <a href="#L392">392</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Forwarding ports...
+</pre>
+    </td>
+  </tr>
+  <tr id="L393">
+    <th class="line-num">
+      <a href="#L393">393</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: 22 (guest) =&gt; 2201 (host) (adapter 1)
+</pre>
+    </td>
+  </tr>
+  <tr id="L394">
+    <th class="line-num">
+      <a href="#L394">394</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Running 'pre-boot' VM customizations...
+</pre>
+    </td>
+  </tr>
+  <tr id="L395">
+    <th class="line-num">
+      <a href="#L395">395</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Booting VM...
+</pre>
+    </td>
+  </tr>
+  <tr id="L396">
+    <th class="line-num">
+      <a href="#L396">396</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Waiting for machine to boot. This may take a few minutes...
+</pre>
+    </td>
+  </tr>
+  <tr id="L397">
+    <th class="line-num">
+      <a href="#L397">397</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: SSH address: 127.0.0.1:2201
+</pre>
+    </td>
+  </tr>
+  <tr id="L398">
+    <th class="line-num">
+      <a href="#L398">398</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: SSH username: vagrant
+</pre>
+    </td>
+  </tr>
+  <tr id="L399">
+    <th class="line-num">
+      <a href="#L399">399</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: SSH auth method: private key
+</pre>
+    </td>
+  </tr>
+  <tr id="L400">
+    <th class="line-num">
+      <a href="#L400">400</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:
+</pre>
+    </td>
+  </tr>
+  <tr id="L401">
+    <th class="line-num">
+      <a href="#L401">401</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Vagrant insecure key detected. Vagrant will automatically replace
+</pre>
+    </td>
+  </tr>
+  <tr id="L402">
+    <th class="line-num">
+      <a href="#L402">402</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: this with a newly generated keypair for better security.
+</pre>
+    </td>
+  </tr>
+  <tr id="L403">
+    <th class="line-num">
+      <a href="#L403">403</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:
+</pre>
+    </td>
+  </tr>
+  <tr id="L404">
+    <th class="line-num">
+      <a href="#L404">404</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Inserting generated public key within guest...
+</pre>
+    </td>
+  </tr>
+  <tr id="L405">
+    <th class="line-num">
+      <a href="#L405">405</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Removing insecure key from the guest if it's present...
+</pre>
+    </td>
+  </tr>
+  <tr id="L406">
+    <th class="line-num">
+      <a href="#L406">406</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Key inserted! Disconnecting and reconnecting using new SSH key...
+</pre>
+    </td>
+  </tr>
+  <tr id="L407">
+    <th class="line-num">
+      <a href="#L407">407</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Machine booted and ready!
+</pre>
+    </td>
+  </tr>
+  <tr id="L408">
+    <th class="line-num">
+      <a href="#L408">408</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Checking for guest additions in VM...
+</pre>
+    </td>
+  </tr>
+  <tr id="L409">
+    <th class="line-num">
+      <a href="#L409">409</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: The guest additions on this VM do not match the installed version of
+</pre>
+    </td>
+  </tr>
+  <tr id="L410">
+    <th class="line-num">
+      <a href="#L410">410</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: VirtualBox! In most cases this is fine, but in rare cases it can
+</pre>
+    </td>
+  </tr>
+  <tr id="L411">
+    <th class="line-num">
+      <a href="#L411">411</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: prevent things such as shared folders from working properly. If you see
+</pre>
+    </td>
+  </tr>
+  <tr id="L412">
+    <th class="line-num">
+      <a href="#L412">412</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: shared folder errors, please make sure the guest additions within the
+</pre>
+    </td>
+  </tr>
+  <tr id="L413">
+    <th class="line-num">
+      <a href="#L413">413</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: virtual machine match the version of VirtualBox you have installed on
+</pre>
+    </td>
+  </tr>
+  <tr id="L414">
+    <th class="line-num">
+      <a href="#L414">414</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: your host and reload your VM.
+</pre>
+    </td>
+  </tr>
+  <tr id="L415">
+    <th class="line-num">
+      <a href="#L415">415</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:
+</pre>
+    </td>
+  </tr>
+  <tr id="L416">
+    <th class="line-num">
+      <a href="#L416">416</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Guest Additions Version: 5.1.26
+</pre>
+    </td>
+  </tr>
+  <tr id="L417">
+    <th class="line-num">
+      <a href="#L417">417</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: VirtualBox Version: 6.0
+</pre>
+    </td>
+  </tr>
+  <tr id="L418">
+    <th class="line-num">
+      <a href="#L418">418</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Setting hostname...
+</pre>
+    </td>
+  </tr>
+  <tr id="L419">
+    <th class="line-num">
+      <a href="#L419">419</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Configuring and enabling network interfaces...
+</pre>
+    </td>
+  </tr>
+  <tr id="L420">
+    <th class="line-num">
+      <a href="#L420">420</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Rsyncing folder: /home/elaad/rudder-tests/scripts/ =&gt; /vagrant/scripts
+</pre>
+    </td>
+  </tr>
+  <tr id="L421">
+    <th class="line-num">
+      <a href="#L421">421</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Running provisioner: shell...
+</pre>
+    </td>
+  </tr>
+  <tr id="L422">
+    <th class="line-num">
+      <a href="#L422">422</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Running: inline script
+</pre>
+    </td>
+  </tr>
+  <tr id="L423">
+    <th class="line-num">
+      <a href="#L423">423</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ echo 'Starting VM setup'
+</pre>
+    </td>
+  </tr>
+  <tr id="L424">
+    <th class="line-num">
+      <a href="#L424">424</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Starting VM setup
+</pre>
+    </td>
+  </tr>
+  <tr id="L425">
+    <th class="line-num">
+      <a href="#L425">425</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ /vagrant/scripts/cleanbox.sh /vagrant
+</pre>
+    </td>
+  </tr>
+  <tr id="L426">
+    <th class="line-num">
+      <a href="#L426">426</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ /vagrant/scripts/network.sh 192.168.2 2 'relay agent1 agent2 server'
+</pre>
+    </td>
+  </tr>
+  <tr id="L427">
+    <th class="line-num">
+      <a href="#L427">427</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ set +x
+</pre>
+    </td>
+  </tr>
+  <tr id="L428">
+    <th class="line-num">
+      <a href="#L428">428</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ head -n 1G
+</pre>
+    </td>
+  </tr>
+  <tr id="L429">
+    <th class="line-num">
+      <a href="#L429">429</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ http_proxy=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L430">
+    <th class="line-num">
+      <a href="#L430">430</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ https_proxy=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L431">
+    <th class="line-num">
+      <a href="#L431">431</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ HTTP_PROXY=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L432">
+    <th class="line-num">
+      <a href="#L432">432</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ HTTPS_PROXY=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L433">
+    <th class="line-num">
+      <a href="#L433">433</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ PLUGINS_VERSION=
+</pre>
+    </td>
+  </tr>
+  <tr id="L434">
+    <th class="line-num">
+      <a href="#L434">434</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ FORGET_CREDENTIALS=
+</pre>
+    </td>
+  </tr>
+  <tr id="L435">
+    <th class="line-num">
+      <a href="#L435">435</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ DISABLE_AUTODETECT_NETWORKS=yes
+</pre>
+    </td>
+  </tr>
+  <tr id="L436">
+    <th class="line-num">
+      <a href="#L436">436</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ ALLOWEDNETWORK=192.168.2.0/24
+</pre>
+    </td>
+  </tr>
+  <tr id="L437">
+    <th class="line-num">
+      <a href="#L437">437</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ UNSUPPORTED=
+</pre>
+    </td>
+  </tr>
+  <tr id="L438">
+    <th class="line-num">
+      <a href="#L438">438</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ ADMIN_PASSWORD=admin
+</pre>
+    </td>
+  </tr>
+  <tr id="L439">
+    <th class="line-num">
+      <a href="#L439">439</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ REPO_PREFIX=rtf/
+</pre>
+    </td>
+  </tr>
+  <tr id="L440">
+    <th class="line-num">
+      <a href="#L440">440</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ++ /usr/local/bin/rudder-setup setup-agent 6.0 ''
+</pre>
+    </td>
+  </tr>
+  <tr id="L441">
+    <th class="line-num">
+      <a href="#L441">441</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: W
+</pre>
+    </td>
+  </tr>
+  <tr id="L442">
+    <th class="line-num">
+      <a href="#L442">442</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: :
+</pre>
+    </td>
+  </tr>
+  <tr id="L443">
+    <th class="line-num">
+      <a href="#L443">443</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: GPG error: http://archive.debian.org squeeze Release: The following signatures were invalid: KEYEXPIRED 1520281423 KEYEXPIRED 1501892461
+</pre>
+    </td>
+  </tr>
+  <tr id="L444">
+    <th class="line-num">
+      <a href="#L444">444</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: readlink: extra operand `[2]'
+</pre>
+    </td>
+  </tr>
+  <tr id="L445">
+    <th class="line-num">
+      <a href="#L445">445</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Try `readlink --help' for more information.
+</pre>
+    </td>
+  </tr>
+  <tr id="L446">
+    <th class="line-num">
+      <a href="#L446">446</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: INFO: The UUID of the node does not exist and no backup exist. A new one will be generated...
+</pre>
+    </td>
+  </tr>
+  <tr id="L447">
+    <th class="line-num">
+      <a href="#L447">447</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L448">
+    <th class="line-num">
+      <a href="#L448">448</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: INFO: Agent keys are missing, creating them ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L449">
+    <th class="line-num">
+      <a href="#L449">449</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L450">
+    <th class="line-num">
+      <a href="#L450">450</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: INFO: Agent certificate is missing, creating it...
+</pre>
+    </td>
+  </tr>
+  <tr id="L451">
+    <th class="line-num">
+      <a href="#L451">451</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L452">
+    <th class="line-num">
+      <a href="#L452">452</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: INFO: Policies absent, restoring initial version, and updating ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L453">
+    <th class="line-num">
+      <a href="#L453">453</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:    error: Unable to resolve policy server host: rudder
+</pre>
+    </td>
+  </tr>
+  <tr id="L454">
+    <th class="line-num">
+      <a href="#L454">454</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:    error: Unable to resolve policy server host: rudder
+</pre>
+    </td>
+  </tr>
+  <tr id="L455">
+    <th class="line-num">
+      <a href="#L455">455</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:    error: No suitable server found
+</pre>
+    </td>
+  </tr>
+  <tr id="L456">
+    <th class="line-num">
+      <a href="#L456">456</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:    error: No suitable server found
+</pre>
+    </td>
+  </tr>
+  <tr id="L457">
+    <th class="line-num">
+      <a href="#L457">457</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: R: Initial policies have been successfully downloaded from the policy server
+</pre>
+    </td>
+  </tr>
+  <tr id="L458">
+    <th class="line-num">
+      <a href="#L458">458</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: error: Rudder agent promises could not be updated.
+</pre>
+    </td>
+  </tr>
+  <tr id="L459">
+    <th class="line-num">
+      <a href="#L459">459</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ok: Rudder agent state has been reset.
+</pre>
+    </td>
+  </tr>
+  <tr id="L460">
+    <th class="line-num">
+      <a href="#L460">460</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L461">
+    <th class="line-num">
+      <a href="#L461">461</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: INFO: No disable file detected and no agent executor process either. Restarting agent service...
+</pre>
+    </td>
+  </tr>
+  <tr id="L462">
+    <th class="line-num">
+      <a href="#L462">462</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] Using /var/rudder/cfengine-community for CFEngine workdir
+</pre>
+    </td>
+  </tr>
+  <tr id="L463">
+    <th class="line-num">
+      <a href="#L463">463</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] Halting CFEngine Community cf-serverd...
+</pre>
+    </td>
+  </tr>
+  <tr id="L464">
+    <th class="line-num">
+      <a href="#L464">464</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] can't read PID file, not stopping cf-serverd
+</pre>
+    </td>
+  </tr>
+  <tr id="L465">
+    <th class="line-num">
+      <a href="#L465">465</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] Halting CFEngine Community cf-execd...
+</pre>
+    </td>
+  </tr>
+  <tr id="L466">
+    <th class="line-num">
+      <a href="#L466">466</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] can't read PID file, not stopping cf-execd
+</pre>
+    </td>
+  </tr>
+  <tr id="L467">
+    <th class="line-num">
+      <a href="#L467">467</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] Found no CFEngine Community cf-serverd processes running
+</pre>
+    </td>
+  </tr>
+  <tr id="L468">
+    <th class="line-num">
+      <a href="#L468">468</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] Found no CFEngine Community cf-execd processes running
+</pre>
+    </td>
+  </tr>
+  <tr id="L469">
+    <th class="line-num">
+      <a href="#L469">469</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ok: stop service rudder-agent succeeded
+</pre>
+    </td>
+  </tr>
+  <tr id="L470">
+    <th class="line-num">
+      <a href="#L470">470</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] Using /var/rudder/cfengine-community for CFEngine workdir
+</pre>
+    </td>
+  </tr>
+  <tr id="L471">
+    <th class="line-num">
+      <a href="#L471">471</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] Launching CFEngine Community cf-serverd...
+</pre>
+    </td>
+  </tr>
+  <tr id="L472">
+    <th class="line-num">
+      <a href="#L472">472</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:     info: Unable to lookup hostname 'rudder' or cfengine service. (getaddrinfo: Name or service not known)
+</pre>
+    </td>
+  </tr>
+  <tr id="L473">
+    <th class="line-num">
+      <a href="#L473">473</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:    error: Unable to resolve policy server host: rudder
+</pre>
+    </td>
+  </tr>
+  <tr id="L474">
+    <th class="line-num">
+      <a href="#L474">474</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:     info: Unable to lookup hostname 'rudder' or cfengine service. (getaddrinfo: Name or service not known)
+</pre>
+    </td>
+  </tr>
+  <tr id="L475">
+    <th class="line-num">
+      <a href="#L475">475</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:    error: Unable to resolve policy server host: rudder
+</pre>
+    </td>
+  </tr>
+  <tr id="L476">
+    <th class="line-num">
+      <a href="#L476">476</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [OK] CFEngine Community cf-serverd started after 1 seconds
+</pre>
+    </td>
+  </tr>
+  <tr id="L477">
+    <th class="line-num">
+      <a href="#L477">477</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [INFO] Launching CFEngine Community cf-execd...
+</pre>
+    </td>
+  </tr>
+  <tr id="L478">
+    <th class="line-num">
+      <a href="#L478">478</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:    error: Unable to resolve policy server host: rudder
+</pre>
+    </td>
+  </tr>
+  <tr id="L479">
+    <th class="line-num">
+      <a href="#L479">479</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:    error: Unable to resolve policy server host: rudder
+</pre>
+    </td>
+  </tr>
+  <tr id="L480">
+    <th class="line-num">
+      <a href="#L480">480</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: rudder-agent: [OK] CFEngine Community cf-execd started after 1 seconds
+</pre>
+    </td>
+  </tr>
+  <tr id="L481">
+    <th class="line-num">
+      <a href="#L481">481</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: ok: start service rudder-agent succeeded
+</pre>
+    </td>
+  </tr>
+  <tr id="L482">
+    <th class="line-num">
+      <a href="#L482">482</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L483">
+    <th class="line-num">
+      <a href="#L483">483</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: INFO: Inventory older than 3 days, resending ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L484">
+    <th class="line-num">
+      <a href="#L484">484</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Agent is currently in bootstrap policies, cannot run an inventory, you need to download initial policies from the server
+</pre>
+    </td>
+  </tr>
+  <tr id="L485">
+    <th class="line-num">
+      <a href="#L485">485</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:  Done
+</pre>
+    </td>
+  </tr>
+  <tr id="L486">
+    <th class="line-num">
+      <a href="#L486">486</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: FINISH: Rudder agent check ran properly, please look at messages above to see if there has been any error.
+</pre>
+    </td>
+  </tr>
+  <tr id="L487">
+    <th class="line-num">
+      <a href="#L487">487</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Agent is currently in bootstrap policies, cannot run an inventory, you need to download initial policies from the server
+</pre>
+    </td>
+  </tr>
+  <tr id="L488">
+    <th class="line-num">
+      <a href="#L488">488</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Reading package lists...
+</pre>
+    </td>
+  </tr>
+  <tr id="L489">
+    <th class="line-num">
+      <a href="#L489">489</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Building dependency tree...
+</pre>
+    </td>
+  </tr>
+  <tr id="L490">
+    <th class="line-num">
+      <a href="#L490">490</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Reading state information...
+</pre>
+    </td>
+  </tr>
+  <tr id="L491">
+    <th class="line-num">
+      <a href="#L491">491</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: apt-transport-https is already the newest version.
+</pre>
+    </td>
+  </tr>
+  <tr id="L492">
+    <th class="line-num">
+      <a href="#L492">492</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+</pre>
+    </td>
+  </tr>
+  <tr id="L493">
+    <th class="line-num">
+      <a href="#L493">493</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: OK
+</pre>
+    </td>
+  </tr>
+  <tr id="L494">
+    <th class="line-num">
+      <a href="#L494">494</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Hit http://archive.debian.org squeeze Release.gpg
+</pre>
+    </td>
+  </tr>
+  <tr id="L495">
+    <th class="line-num">
+      <a href="#L495">495</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Get:1 https://download.rudder.io squeeze Release.gpg [801 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L496">
+    <th class="line-num">
+      <a href="#L496">496</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Ign http://archive.debian.org/debian/ squeeze/main Translation-en
+</pre>
+    </td>
+  </tr>
+  <tr id="L497">
+    <th class="line-num">
+      <a href="#L497">497</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Ign https://download.rudder.io/rtf/apt/6.0/ squeeze/main Translation-en
+</pre>
+    </td>
+  </tr>
+  <tr id="L498">
+    <th class="line-num">
+      <a href="#L498">498</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Ign http://archive.debian.org/debian/ squeeze/main Translation-en_US
+</pre>
+    </td>
+  </tr>
+  <tr id="L499">
+    <th class="line-num">
+      <a href="#L499">499</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Hit http://archive.debian.org squeeze Release
+</pre>
+    </td>
+  </tr>
+  <tr id="L500">
+    <th class="line-num">
+      <a href="#L500">500</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Ign http://archive.debian.org squeeze Release
+</pre>
+    </td>
+  </tr>
+  <tr id="L501">
+    <th class="line-num">
+      <a href="#L501">501</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Ign https://download.rudder.io/rtf/apt/6.0/ squeeze/main Translation-en_US
+</pre>
+    </td>
+  </tr>
+  <tr id="L502">
+    <th class="line-num">
+      <a href="#L502">502</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Ign http://archive.debian.org squeeze/main Sources/DiffIndex
+</pre>
+    </td>
+  </tr>
+  <tr id="L503">
+    <th class="line-num">
+      <a href="#L503">503</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Ign http://archive.debian.org squeeze/main amd64 Packages/DiffIndex
+</pre>
+    </td>
+  </tr>
+  <tr id="L504">
+    <th class="line-num">
+      <a href="#L504">504</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Get:2 https://download.rudder.io squeeze Release [8,502 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L505">
+    <th class="line-num">
+      <a href="#L505">505</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Hit http://archive.debian.org squeeze/main Sources
+</pre>
+    </td>
+  </tr>
+  <tr id="L506">
+    <th class="line-num">
+      <a href="#L506">506</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Get:3 https://download.rudder.io squeeze/main amd64 Packages [797 B]
+</pre>
+    </td>
+  </tr>
+  <tr id="L507">
+    <th class="line-num">
+      <a href="#L507">507</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Hit http://archive.debian.org squeeze/main amd64 Packages
+</pre>
+    </td>
+  </tr>
+  <tr id="L508">
+    <th class="line-num">
+      <a href="#L508">508</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Fetched 10.1 kB in 0s (22.6 kB/s)
+</pre>
+    </td>
+  </tr>
+  <tr id="L509">
+    <th class="line-num">
+      <a href="#L509">509</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Reading package lists...
+</pre>
+    </td>
+  </tr>
+  <tr id="L510">
+    <th class="line-num">
+      <a href="#L510">510</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Reading package lists...
+</pre>
+    </td>
+  </tr>
+  <tr id="L511">
+    <th class="line-num">
+      <a href="#L511">511</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Building dependency tree...
+</pre>
+    </td>
+  </tr>
+  <tr id="L512">
+    <th class="line-num">
+      <a href="#L512">512</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Reading state information...
+</pre>
+    </td>
+  </tr>
+  <tr id="L513">
+    <th class="line-num">
+      <a href="#L513">513</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: The following extra packages will be installed:
+</pre>
+    </td>
+  </tr>
+  <tr id="L514">
+    <th class="line-num">
+      <a href="#L514">514</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:   libxml-treepp-perl libyaml-0-2
+</pre>
+    </td>
+  </tr>
+  <tr id="L515">
+    <th class="line-num">
+      <a href="#L515">515</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: The following NEW packages will be installed:
+</pre>
+    </td>
+  </tr>
+  <tr id="L516">
+    <th class="line-num">
+      <a href="#L516">516</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:   libxml-treepp-perl libyaml-0-2 rudder-agent
+</pre>
+    </td>
+  </tr>
+  <tr id="L517">
+    <th class="line-num">
+      <a href="#L517">517</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: 0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+</pre>
+    </td>
+  </tr>
+  <tr id="L518">
+    <th class="line-num">
+      <a href="#L518">518</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Need to get 11.1 MB of archives.
+</pre>
+    </td>
+  </tr>
+  <tr id="L519">
+    <th class="line-num">
+      <a href="#L519">519</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: After this operation, 50.5 MB of additional disk space will be used.
+</pre>
+    </td>
+  </tr>
+  <tr id="L520">
+    <th class="line-num">
+      <a href="#L520">520</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: WARNING: The following packages cannot be authenticated!
+</pre>
+    </td>
+  </tr>
+  <tr id="L521">
+    <th class="line-num">
+      <a href="#L521">521</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2:   libxml-treepp-perl libyaml-0-2 rudder-agent
+</pre>
+    </td>
+  </tr>
+  <tr id="L522">
+    <th class="line-num">
+      <a href="#L522">522</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Authentication warning overridden.
+</pre>
+    </td>
+  </tr>
+  <tr id="L523">
+    <th class="line-num">
+      <a href="#L523">523</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Get:1 http://archive.debian.org/debian/ squeeze/main libxml-treepp-perl all 0.39-1 [26.1 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L524">
+    <th class="line-num">
+      <a href="#L524">524</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Get:2 http://archive.debian.org/debian/ squeeze/main libyaml-0-2 amd64 0.1.3-1+deb6u4 [55.6 kB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L525">
+    <th class="line-num">
+      <a href="#L525">525</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Get:3 https://download.rudder.io/rtf/apt/6.0/ squeeze/main rudder-agent amd64 6.0.7-debian6 [11.0 MB]
+</pre>
+    </td>
+  </tr>
+  <tr id="L526">
+    <th class="line-num">
+      <a href="#L526">526</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Preconfiguring packages ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L527">
+    <th class="line-num">
+      <a href="#L527">527</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Fetched 11.1 MB in 8s (1,335 kB/s)
+</pre>
+    </td>
+  </tr>
+  <tr id="L528">
+    <th class="line-num">
+      <a href="#L528">528</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Selecting previously deselected package libxml-treepp-perl.
+</pre>
+    </td>
+  </tr>
+  <tr id="L529">
+    <th class="line-num">
+      <a href="#L529">529</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: (Reading database ... 26194 files and directories currently installed.)
+</pre>
+    </td>
+  </tr>
+  <tr id="L530">
+    <th class="line-num">
+      <a href="#L530">530</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Unpacking libxml-treepp-perl (from .../libxml-treepp-perl_0.39-1_all.deb) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L531">
+    <th class="line-num">
+      <a href="#L531">531</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Selecting previously deselected package libyaml-0-2.
+</pre>
+    </td>
+  </tr>
+  <tr id="L532">
+    <th class="line-num">
+      <a href="#L532">532</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Unpacking libyaml-0-2 (from .../libyaml-0-2_0.1.3-1+deb6u4_amd64.deb) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L533">
+    <th class="line-num">
+      <a href="#L533">533</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Selecting previously deselected package rudder-agent.
+</pre>
+    </td>
+  </tr>
+  <tr id="L534">
+    <th class="line-num">
+      <a href="#L534">534</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Unpacking rudder-agent (from .../rudder-agent_6.0.7-debian6_amd64.deb) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L535">
+    <th class="line-num">
+      <a href="#L535">535</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Processing triggers for man-db ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L536">
+    <th class="line-num">
+      <a href="#L536">536</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Setting up libxml-treepp-perl (0.39-1) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L537">
+    <th class="line-num">
+      <a href="#L537">537</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Setting up libyaml-0-2 (0.1.3-1+deb6u4) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L538">
+    <th class="line-num">
+      <a href="#L538">538</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_agent2: Setting up rudder-agent (6.0.7-debian6) ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L539">
+    <th class="line-num">
+      <a href="#L539">539</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Running action triggers after up ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L540">
+    <th class="line-num">
+      <a href="#L540">540</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_agent2: Running trigger...
+</pre>
+    </td>
+  </tr>
+  <tr id="L541">
+    <th class="line-num">
+      <a href="#L541">541</a>
+    </th>
+    <td class="line-code">
+      <pre>Bringing machine 'dev_server' up with 'virtualbox' provider...
+</pre>
+    </td>
+  </tr>
+  <tr id="L542">
+    <th class="line-num">
+      <a href="#L542">542</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Importing base box 'normation/debian-10-64'...
+</pre>
+    </td>
+  </tr>
+  <tr id="L543">
+    <th class="line-num">
+      <a href="#L543">543</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Matching MAC address for NAT networking...
+</pre>
+    </td>
+  </tr>
+  <tr id="L544">
+    <th class="line-num">
+      <a href="#L544">544</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Checking if box 'normation/debian-10-64' version '1.0' is up to date...
+</pre>
+    </td>
+  </tr>
+  <tr id="L545">
+    <th class="line-num">
+      <a href="#L545">545</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Setting the name of the VM: dev_server
+</pre>
+    </td>
+  </tr>
+  <tr id="L546">
+    <th class="line-num">
+      <a href="#L546">546</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Fixed port collision for 22 =&gt; 2222. Now on port 2202.
+</pre>
+    </td>
+  </tr>
+  <tr id="L547">
+    <th class="line-num">
+      <a href="#L547">547</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Clearing any previously set network interfaces...
+</pre>
+    </td>
+  </tr>
+  <tr id="L548">
+    <th class="line-num">
+      <a href="#L548">548</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Preparing network interfaces based on configuration...
+</pre>
+    </td>
+  </tr>
+  <tr id="L549">
+    <th class="line-num">
+      <a href="#L549">549</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: Adapter 1: nat
+</pre>
+    </td>
+  </tr>
+  <tr id="L550">
+    <th class="line-num">
+      <a href="#L550">550</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: Adapter 2: hostonly
+</pre>
+    </td>
+  </tr>
+  <tr id="L551">
+    <th class="line-num">
+      <a href="#L551">551</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Forwarding ports...
+</pre>
+    </td>
+  </tr>
+  <tr id="L552">
+    <th class="line-num">
+      <a href="#L552">552</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: 389 (guest) =&gt; 1389 (host) (adapter 1)
+</pre>
+    </td>
+  </tr>
+  <tr id="L553">
+    <th class="line-num">
+      <a href="#L553">553</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: 5432 (guest) =&gt; 15432 (host) (adapter 1)
+</pre>
+    </td>
+  </tr>
+  <tr id="L554">
+    <th class="line-num">
+      <a href="#L554">554</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: 22 (guest) =&gt; 2202 (host) (adapter 1)
+</pre>
+    </td>
+  </tr>
+  <tr id="L555">
+    <th class="line-num">
+      <a href="#L555">555</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Running 'pre-boot' VM customizations...
+</pre>
+    </td>
+  </tr>
+  <tr id="L556">
+    <th class="line-num">
+      <a href="#L556">556</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Booting VM...
+</pre>
+    </td>
+  </tr>
+  <tr id="L557">
+    <th class="line-num">
+      <a href="#L557">557</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Waiting for machine to boot. This may take a few minutes...
+</pre>
+    </td>
+  </tr>
+  <tr id="L558">
+    <th class="line-num">
+      <a href="#L558">558</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: SSH address: 127.0.0.1:2202
+</pre>
+    </td>
+  </tr>
+  <tr id="L559">
+    <th class="line-num">
+      <a href="#L559">559</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: SSH username: vagrant
+</pre>
+    </td>
+  </tr>
+  <tr id="L560">
+    <th class="line-num">
+      <a href="#L560">560</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: SSH auth method: private key
+</pre>
+    </td>
+  </tr>
+  <tr id="L561">
+    <th class="line-num">
+      <a href="#L561">561</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:
+</pre>
+    </td>
+  </tr>
+  <tr id="L562">
+    <th class="line-num">
+      <a href="#L562">562</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: Vagrant insecure key detected. Vagrant will automatically replace
+</pre>
+    </td>
+  </tr>
+  <tr id="L563">
+    <th class="line-num">
+      <a href="#L563">563</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: this with a newly generated keypair for better security.
+</pre>
+    </td>
+  </tr>
+  <tr id="L564">
+    <th class="line-num">
+      <a href="#L564">564</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:
+</pre>
+    </td>
+  </tr>
+  <tr id="L565">
+    <th class="line-num">
+      <a href="#L565">565</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: Inserting generated public key within guest...
+</pre>
+    </td>
+  </tr>
+  <tr id="L566">
+    <th class="line-num">
+      <a href="#L566">566</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: Removing insecure key from the guest if it's present...
+</pre>
+    </td>
+  </tr>
+  <tr id="L567">
+    <th class="line-num">
+      <a href="#L567">567</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: Key inserted! Disconnecting and reconnecting using new SSH key...
+</pre>
+    </td>
+  </tr>
+  <tr id="L568">
+    <th class="line-num">
+      <a href="#L568">568</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Machine booted and ready!
+</pre>
+    </td>
+  </tr>
+  <tr id="L569">
+    <th class="line-num">
+      <a href="#L569">569</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Checking for guest additions in VM...
+</pre>
+    </td>
+  </tr>
+  <tr id="L570">
+    <th class="line-num">
+      <a href="#L570">570</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Setting hostname...
+</pre>
+    </td>
+  </tr>
+  <tr id="L571">
+    <th class="line-num">
+      <a href="#L571">571</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Configuring and enabling network interfaces...
+</pre>
+    </td>
+  </tr>
+  <tr id="L572">
+    <th class="line-num">
+      <a href="#L572">572</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Mounting shared folders...
+</pre>
+    </td>
+  </tr>
+  <tr id="L573">
+    <th class="line-num">
+      <a href="#L573">573</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: /vagrant =&gt; /home/elaad/rudder-tests
+</pre>
+    </td>
+  </tr>
+  <tr id="L574">
+    <th class="line-num">
+      <a href="#L574">574</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: /var/rudder/share =&gt; /var/rudder/share
+</pre>
+    </td>
+  </tr>
+  <tr id="L575">
+    <th class="line-num">
+      <a href="#L575">575</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: /var/rudder/inventories =&gt; /var/rudder/inventories
+</pre>
+    </td>
+  </tr>
+  <tr id="L576">
+    <th class="line-num">
+      <a href="#L576">576</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: /var/rudder/cfengine-community/inputs =&gt; /var/rudder/cfengine-community/inputs
+</pre>
+    </td>
+  </tr>
+  <tr id="L577">
+    <th class="line-num">
+      <a href="#L577">577</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Running provisioner: shell...
+</pre>
+    </td>
+  </tr>
+  <tr id="L578">
+    <th class="line-num">
+      <a href="#L578">578</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: Running: inline script
+</pre>
+    </td>
+  </tr>
+  <tr id="L579">
+    <th class="line-num">
+      <a href="#L579">579</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ echo 'Starting VM setup'
+</pre>
+    </td>
+  </tr>
+  <tr id="L580">
+    <th class="line-num">
+      <a href="#L580">580</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: Starting VM setup
+</pre>
+    </td>
+  </tr>
+  <tr id="L581">
+    <th class="line-num">
+      <a href="#L581">581</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ /vagrant/scripts/cleanbox.sh /vagrant
+</pre>
+    </td>
+  </tr>
+  <tr id="L582">
+    <th class="line-num">
+      <a href="#L582">582</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ /vagrant/scripts/network.sh 192.168.2 2 'relay agent1 agent2 server'
+</pre>
+    </td>
+  </tr>
+  <tr id="L583">
+    <th class="line-num">
+      <a href="#L583">583</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ set +x
+</pre>
+    </td>
+  </tr>
+  <tr id="L584">
+    <th class="line-num">
+      <a href="#L584">584</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ head -n 1G
+</pre>
+    </td>
+  </tr>
+  <tr id="L585">
+    <th class="line-num">
+      <a href="#L585">585</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ http_proxy=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L586">
+    <th class="line-num">
+      <a href="#L586">586</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ https_proxy=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L587">
+    <th class="line-num">
+      <a href="#L587">587</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ HTTP_PROXY=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L588">
+    <th class="line-num">
+      <a href="#L588">588</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ HTTPS_PROXY=http://filer.interne.normation.com:3128
+</pre>
+    </td>
+  </tr>
+  <tr id="L589">
+    <th class="line-num">
+      <a href="#L589">589</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ DEV_MODE=true
+</pre>
+    </td>
+  </tr>
+  <tr id="L590">
+    <th class="line-num">
+      <a href="#L590">590</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ PLUGINS_VERSION=
+</pre>
+    </td>
+  </tr>
+  <tr id="L591">
+    <th class="line-num">
+      <a href="#L591">591</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ FORGET_CREDENTIALS=
+</pre>
+    </td>
+  </tr>
+  <tr id="L592">
+    <th class="line-num">
+      <a href="#L592">592</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ DISABLE_AUTODETECT_NETWORKS=yes
+</pre>
+    </td>
+  </tr>
+  <tr id="L593">
+    <th class="line-num">
+      <a href="#L593">593</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ ALLOWEDNETWORK=192.168.2.0/24
+</pre>
+    </td>
+  </tr>
+  <tr id="L594">
+    <th class="line-num">
+      <a href="#L594">594</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ UNSUPPORTED=
+</pre>
+    </td>
+  </tr>
+  <tr id="L595">
+    <th class="line-num">
+      <a href="#L595">595</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ ADMIN_PASSWORD=admin
+</pre>
+    </td>
+  </tr>
+  <tr id="L596">
+    <th class="line-num">
+      <a href="#L596">596</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ REPO_PREFIX=rtf/
+</pre>
+    </td>
+  </tr>
+  <tr id="L597">
+    <th class="line-num">
+      <a href="#L597">597</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: ++ /usr/local/bin/rudder-setup setup-dev 6.0 ''
+</pre>
+    </td>
+  </tr>
+  <tr id="L598">
+    <th class="line-num">
+      <a href="#L598">598</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server: Usage /usr/local/bin/rudder-setup (add-repository|setup-agent|setup-relay|setup-server|upgrade-agent|upgrade-relay|upgrade-server) &lt;rudder_version&gt; [&lt;policy_server&gt;] ['&lt;plugins&gt;']
+</pre>
+    </td>
+  </tr>
+  <tr id="L599">
+    <th class="line-num">
+      <a href="#L599">599</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:   Adds a repository and setup rudder on your OS
+</pre>
+    </td>
+  </tr>
+  <tr id="L600">
+    <th class="line-num">
+      <a href="#L600">600</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:   Should work on as many OS as possible
+</pre>
+    </td>
+  </tr>
+  <tr id="L601">
+    <th class="line-num">
+      <a href="#L601">601</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:   Currently suported : Debian, Ubuntu, RHEL, Fedora, Centos, Amazon, Oracle, SLES
+</pre>
+    </td>
+  </tr>
+  <tr id="L602">
+    <th class="line-num">
+      <a href="#L602">602</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:
+</pre>
+    </td>
+  </tr>
+  <tr id="L603">
+    <th class="line-num">
+      <a href="#L603">603</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:   rudder_version : x.y or x.y.z or x.y-nightly or ci/x.y or lts or latest
+</pre>
+    </td>
+  </tr>
+  <tr id="L604">
+    <th class="line-num">
+      <a href="#L604">604</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:        x.y:            the latest x.y release (ex: 3.2)
+</pre>
+    </td>
+  </tr>
+  <tr id="L605">
+    <th class="line-num">
+      <a href="#L605">605</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:        x.y.z:          the exact x.y.z release (ex: 3.2.1)
+</pre>
+    </td>
+  </tr>
+  <tr id="L606">
+    <th class="line-num">
+      <a href="#L606">606</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:        x.y.z~a:        the latest x.y.z pre-release where a can be alpha1, beta1, rc1... (ex: 4.0.0~rc1)
+</pre>
+    </td>
+  </tr>
+  <tr id="L607">
+    <th class="line-num">
+      <a href="#L607">607</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:        x.y-nightly:    the latest public x.y nightly build (ex: 3.2-nightly)
+</pre>
+    </td>
+  </tr>
+  <tr id="L608">
+    <th class="line-num">
+      <a href="#L608">608</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:        ci/x.y.z:       the latest development x.y.z release build (ex: ci/3.2.16)
+</pre>
+    </td>
+  </tr>
+  <tr id="L609">
+    <th class="line-num">
+      <a href="#L609">609</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:        ci/x.y.z~a:     the latest development x.y.z pre-release build (ex: ci/4.0.0~rc1)
+</pre>
+    </td>
+  </tr>
+  <tr id="L610">
+    <th class="line-num">
+      <a href="#L610">610</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:        ci/x.y-nightly: the latest development x.y nightly build (ex: ci/5.1-nightly)
+</pre>
+    </td>
+  </tr>
+  <tr id="L611">
+    <th class="line-num">
+      <a href="#L611">611</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:        latest:         the latest stable version
+</pre>
+    </td>
+  </tr>
+  <tr id="L612">
+    <th class="line-num">
+      <a href="#L612">612</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:
+</pre>
+    </td>
+  </tr>
+  <tr id="L613">
+    <th class="line-num">
+      <a href="#L613">613</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:   plugins: 'all' or a list of plugin names between ''
+</pre>
+    </td>
+  </tr>
+  <tr id="L614">
+    <th class="line-num">
+      <a href="#L614">614</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:   plugin_version: '', 'nightly', 'ci', 'ci/nightly' (see below)
+</pre>
+    </td>
+  </tr>
+  <tr id="L615">
+    <th class="line-num">
+      <a href="#L615">615</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:
+</pre>
+    </td>
+  </tr>
+  <tr id="L616">
+    <th class="line-num">
+      <a href="#L616">616</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:   Environment variables
+</pre>
+    </td>
+  </tr>
+  <tr id="L617">
+    <th class="line-num">
+      <a href="#L617">617</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:     USE_HTTPS=true          use https in repository source (default true)
+</pre>
+    </td>
+  </tr>
+  <tr id="L618">
+    <th class="line-num">
+      <a href="#L618">618</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:     PLUGINS_VERSION=...     download nightly or ci version of plugins
+</pre>
+    </td>
+  </tr>
+  <tr id="L619">
+    <th class="line-num">
+      <a href="#L619">619</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:     DOWNLOAD_USER=...       download from private repository with this user
+</pre>
+    </td>
+  </tr>
+  <tr id="L620">
+    <th class="line-num">
+      <a href="#L620">620</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:     DOWNLOAD_PASSWORD=...   use this password for private repository
+</pre>
+    </td>
+  </tr>
+  <tr id="L621">
+    <th class="line-num">
+      <a href="#L621">621</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:     FORGET_CREDENTIALS=true remove credentials after installing plugins and licenses
+</pre>
+    </td>
+  </tr>
+  <tr id="L622">
+    <th class="line-num">
+      <a href="#L622">622</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:     DEV_MODE=true           permit external access to server and databases (default false)
+</pre>
+    </td>
+  </tr>
+  <tr id="L623">
+    <th class="line-num">
+      <a href="#L623">623</a>
+    </th>
+    <td class="line-code">
+      <pre>    dev_server:     ADMIN_PASSWORD=...      create an administrator user 'admin' with the given password
+</pre>
+    </td>
+  </tr>
+  <tr id="L624">
+    <th class="line-num">
+      <a href="#L624">624</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Running action triggers after up ...
+</pre>
+    </td>
+  </tr>
+  <tr id="L625">
+    <th class="line-num">
+      <a href="#L625">625</a>
+    </th>
+    <td class="line-code">
+      <pre>==&gt; dev_server: Running trigger...
+</pre>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+</div>
+
+<span class="pagination filepreview">
+  <ul class="pages"><li class="previous page"><a href="/attachments/1732/dev.json">« Previous</a></li><li class="page"><a href="/attachments/1732/dev.json">1</a></li><li class="current"><span>2</span></li><li class="next"><span>Next »</span></li></ul><span><span class="items">(2-2/2)</span> </span>
+</span>
+
+
+
+        
+        <div style="clear:both;"></div>
+    </div>
+</div>
+<div id="footer">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2020 Jean-Philippe Lang
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+</div>
+</div>
+
+</body>
+</html>

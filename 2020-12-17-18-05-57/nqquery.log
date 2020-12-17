@@ -1,0 +1,370 @@
+
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" style="font-size:">
+<head>
+<meta name="generator" content="DokuWiki" />
+<meta name="robots" content="index,follow" />
+<meta name="keywords" content="dat,obiee,nqquery.log" />
+<meta property="og:url" content="https://datacadamia.com/obiee/nqquery.log" />
+<meta name="description" content="It's the log file of BI Server showing information the process of a logical SQL query. It's located in the directory:  10g: BI_ORACLE_HOME/server/Log  11g: ORACLE_INSTANCE/diagnostics/logs/OracleBIServerComponent/coreapplication_obis1" />
+<meta property="og:description" content="It's the log file of BI Server showing information the process of a logical SQL query. It's located in the directory:  10g: BI_ORACLE_HOME/server/Log  11g: ORACLE_INSTANCE/diagnostics/logs/OracleBIServerComponent/coreapplication_obis1" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://datacadamia.com/lib/exe/opensearch.php" title="Data and Co" />
+<link rel="start" href="https://datacadamia.com/" />
+<link rel="contents" href="https://datacadamia.com/dat/obiee/nqquery.log?do=index" title="Sitemap" />
+<link rel="manifest" href="https://datacadamia.com/lib/exe/manifest.php" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="https://datacadamia.com/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current namespace" href="https://datacadamia.com/feed.php?mode=list&amp;ns=dat:obiee" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="https://datacadamia.com/_export/xhtml/dat/obiee/nqquery.log" />
+<link rel="canonical" href="https://datacadamia.com/obiee/nqquery.log" />
+<link rel="stylesheet" href="https://datacadamia.com/lib/exe/css.php?t=strap&amp;tseed=e3ab08e86de1554cd83dce025fc6b8a6" />
+<link href="https://datacadamia.com/lib/tpl/strap/bootstrap/4.5.0/bootstrap.16col.min.css" rel="stylesheet" integrity="sha384-qHUrb/0aQsXITU+/99hyrzzX8Sq1M5nNhf1u/bUHJUR+2J6K3oYJ4qQnB/5kZnMY" crossorigin="anonymous" />
+<!--[if gte IE 9]><!-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" defer="true" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" defer="true" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" defer="true" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script defer="true">/*<![CDATA[*/var NS='dat:obiee';var JSINFO = {"ga":{"trackingId":"UA-6493290-1","anonymizeIp":true,"action":"show","trackOutboundLinks":true,"options":[],"pageview":"\/dat\/obiee\/nqquery.log","debug":false},"move_renameokay":false,"id":"dat:obiee:nqquery.log","namespace":"dat:obiee","ACT":"show","useHeadingNavigation":1,"useHeadingContent":1};
+/*!]]>*/</script>
+<script charset="utf-8" src="https://datacadamia.com/lib/exe/js.php?t=strap&amp;tseed=e3ab08e86de1554cd83dce025fc6b8a6&amp;wcacc=public" defer="true"></script>
+<!--<![endif]-->
+<meta charset="utf-8" />
+
+<meta http-equiv="Content-Security-Policy" content="block-all-mixed-content" />
+<title>OBIEE 10G/11G - Nqquery.log (Query logging)</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="shortcut icon" href="https://datacadamia.com/_media/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://datacadamia.com/ttps://datacadamia.com/lib/tpl/strap/images/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://datacadamia.com/ttps://datacadamia.com/lib/tpl/strap/images/favicon-16x16.png"><link rel="apple-touch-icon" href="https://datacadamia.com/ttps://datacadamia.com/lib/tpl/strap/images/apple-touch-icon.png" />
+<script data-ad-client="ca-pub-1481679052079799" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body role="document" class="dokuwiki" style="padding-top: 50px;">
+<style>
+        main > h1, main > h2, main > h3, main > h4, main h5 {
+        padding-top:90px;margin-top:-80px;z-index:-1        }
+    </style>
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color:var(--light)">
+<div class="container">
+<a href="https://datacadamia.com/start" accesskey="h" title="Home" class="navbar-brand">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24px" height="24px" viewBox="0 0 24 24" data-name="logo.svg"><path fill="currentColor" d="M9,7V17H13A2,2 0 0,0 15,15V9A2,2 0 0,0 13,7H9M11,9H13V15H11V9M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" /></svg> <span>ataCadamia</span>
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" "><span class="navbar-toggler-icon"></span></button>
+<div id="navbarcollapse" class="collapse navbar-collapse">
+<ul class="navbar-nav mr-auto">
+</ul>
+<button type="button" class="btn btn-secondary">
+<a href="http://eepurl.com/gEIaJj" class="urlextern" target="_blank" title="http://eepurl.com/gEIaJj" rel="noopener" style=";background-color:inherit;border-color:inherit;color:inherit;background-image:unset;padding:unset">Subscribe</a>
+</button>
+<form action="https://datacadamia.com/start" accept-charset="utf-8" id="dw__search" method="get" role="search" class="search form-inline  mr-0 pr-0 pl-3">
+<input type="hidden" name="do" value="search" /><label class="sr-only" for="search">Search Term</label><input type="text" tabindex="1" placeholder="Search..." id="qsearch__in" accesskey="f" name="id" class="edit form-control" title="[F]" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></form>
+</div>
+</div></nav>
+
+
+<div class="container mb-3 dokuwiki mode_show tpl_strap    " style="position: relative">
+
+<div id="dokuwiki__top" style="padding-top:90px;margin-top:-80px;z-index:-1"></div>
+
+ 
+
+
+
+<nav id="breadcrumb" aria-label="breadcrumb" class="my-3">
+<ol class="breadcrumb py-1 px-2" style="background-color:unset">
+<li class="pr-2" style="display:flex;font-weight: 200">Navigational History :</li><li class="breadcrumb-item"><a href="https://datacadamia.com/dat/obiee/nqquery.log" title="OBIEE 10G/11G - Nqquery.log (Query logging)" style="width: 100%;z-index:10">OBIEE 10G/11G - Nqquery.log (Query logging)</a></li>
+</ol>
+</nav>
+<div class="row">
+
+<nav role="complementary" class="col-md-3 order-last order-md-first">
+
+<nav class="bs-docs-sidebar hidden-prints">
+<div id="minimap__plugin"><div class="panel panel-default"><div class="panel-heading"><a href="https://datacadamia.com/dat/obiee/start" title="dat:obiee:start">Oracle Business Intelligence (OBIEE/Siebel Analytics)</a> <span class="label label-primary">101 pages</span></div><ul class="list-group"><li class="list-group-item "><span class="nicon_folder_open" aria-hidden="true"></span>&nbsp;&nbsp;<a href="https://datacadamia.com/dat/obiee/admin/admin" title="OBIEE - Admin (0)">Admin</a></li><li class="list-group-item "><span class="nicon_folder_open" aria-hidden="true"></span>&nbsp;&nbsp;<a href="https://datacadamia.com/dat/obiee/deploy/deploy" title="OBIEE 10G/11G -  Deployment (Release Promotion) - From Dev, Test to Production (0)"> Deployment (Release Promotion) - From Dev, Test to Production</a></li><li class="list-group-item "><span class="nicon_folder_open" aria-hidden="true"></span>&nbsp;&nbsp;<a href="https://datacadamia.com/dat/obiee/obips/obips" title="OBIEE - BI Presentation Service (SAW/OBIPS) (0)">BI Presentation Service (SAW/OBIPS)</a></li><li class="list-group-item "><span class="nicon_folder_open" aria-hidden="true"></span>&nbsp;&nbsp;<a href="https://datacadamia.com/dat/obiee/obis/obis" title="OBIEE - BI Server (OBIS|nqsserver|nqs) (0)">BI Server (OBIS|nqsserver|nqs)</a></li><li class="list-group-item "><span class="nicon_folder_open" aria-hidden="true"></span>&nbsp;&nbsp;<a href="https://datacadamia.com/dat/obiee/obisch/obisch" title="OBI Scheduler (OBISCH) (0)">OBI Scheduler (OBISCH)</a></li><li class="list-group-item "><span class="nicon_folder_open" aria-hidden="true"></span>&nbsp;&nbsp;<a href="https://datacadamia.com/dat/obiee/ops/ops" title="Operations (Or Admin) (0)">Operations (Or Admin)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/administrator" title="OBIEE 11G/10G - Administrator Account (1)">Administrator Account</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/agent" title="OBIEE 10G/11G - (Ibot|Agent) (2)">(Ibot|Agent)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/agent_diagnostic" title="OBIEE 11G - Agent Diagnostic (log) (3)">Agent Diagnostic (log)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/alias" title="OBIEE 10G/11G  -  Alias (synonyms) (4)"> Alias (synonyms)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/at" title="OBIEE - At Sign (@) (5)">At Sign (@)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/authentication" title="OBIEE - Authentication (ATN) (6)">Authentication (ATN)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/authorization" title="OBIEE - Authorization (7)">Authorization</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/bi_domain" title="OBIEE 11G - BI Domain - The complete OBI System (8)">BI Domain - The complete OBI System</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/bip" title="OBIEE 10G - BIP report integration (9)">BIP report integration</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/biplatform" title="OBIEE 11G - BIPlatform Schema (10)">BIPlatform Schema</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/bisqlprovider" title="OBIEE 11G - BISQLProvider (11)">BISQLProvider</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/bisystemuser" title="OBIEE 11G - BISystemUser (12)">BISystemUser</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/briefing_book" title="OBIEE - Briefing Book (13)">Briefing Book</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/cache" title="OBIEE - All the caches (14)">All the caches</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/cache_manager" title="OBIEE - Cache Manager (15)">Cache Manager</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/calculated_item" title="OBIEE - Calculated Item (16)">Calculated Item</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/calculation" title="OBIEE - Calculation (17)">Calculation</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/capacity" title="OBIEE - Capacity planning / Sizing (18)">Capacity planning / Sizing</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/certification" title="OBIEE 10G/11G - (Browser|Database|Third party product) Certification (19)">(Browser|Database|Third party product) Certification</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/client_tool" title="OBIEE - Client Tools (20)">Client Tools</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/cluster" title="OBIEE 11G - Cluster (High Availability) (21)">Cluster (High Availability)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/delivers" title="OBIEE - Delivers (22)">Delivers</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/delivers_advanced_publication" title="OBIEE 10G - Advanced Publication with Delivers (In Java) (23)">Advanced Publication with Delivers (In Java)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/diagnostic" title="OBIEE 11G - Log Files (Oracle Diagnostic Logging - ODL) (24)">Log Files (Oracle Diagnostic Logging - ODL)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/dms_browser" title="OBIEE - DMS Browser with Weblogic EM (25)">DMS Browser with Weblogic EM</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/ebs" title="OBIEE - EBS Integration (26)">EBS Integration</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/essbase" title="OBIEE - Essbase (27)">Essbase</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/excel" title="OBIEE - Microsoft Excel (28)">Microsoft Excel</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/getting_started" title="OBIEE - Getting Started / Tutorial (29)">Getting Started / Tutorial</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/group" title="OBIEE 10G/11G - (Group|Security Role|Application Role) (30)">(Group|Security Role|Application Role)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/guid" title="OBIEE - GUID (31)">GUID</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/history" title="OBIEE - History (32)">History</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/ibot" title="OBIEE - Ibot (33)">Ibot</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/id" title="OBIEE  - Void (Id) (34)">Void (Id)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/int" title="OBIEE - Integer Datatype (35)">Integer Datatype</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/iphone" title="OBIEE - Mobile Application, Mobile Device (36)">Mobile Application, Mobile Device</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/issuerawsql" title="OBIEE - Issue SQL (the IssueRawSQl Url) (37)">Issue SQL (the IssueRawSQl Url)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/java_host" title="OBIEE - Java Host (38)">Java Host</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/javascript" title="OBIEE - Javascript (39)">Javascript</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/job_manager" title="OBIEE - Job Manager (40)">Job Manager</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/jobid_inconsistent" title="OBIEE - The server responded with: Inconsistent job ids (41)">The server responded with: Inconsistent job ids</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/kpi" title="OBIEE 11G - KPI (42)">KPI</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/layout_pane" title="OBIEE 11G - The drop targets of a layout (view|pane) (43)">The drop targets of a layout (view|pane)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/locale" title="OBIEE 10G/11G - LOCALE system session variable (44)">LOCALE system session variable</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/localization" title="OBIEE - Localization (45)">Localization</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/logical_business_model" title="OBIEE - Common Enterprise Information Model (CEIM) -  The Logical Business Model (the three-layer metadata model) (46)">Common Enterprise Information Model (CEIM) - The Logical Business Model (the three-layer metadata model)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/login" title="OBIEE - Login (47)">Login</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/managemapdata" title="OBIEE 11G - (Manage|Configure) Map Data (48)">(Manage|Configure) Map Data</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/management_pack" title="OBIEE - BI Management Pack (49)">BI Management Pack</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/mapviewer" title="OBIEE 10G/11G - Mapviewer (50)">Mapviewer</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/marketing" title="OBIEE 11G - Oracle Marketing Segmentation (51)">Oracle Marketing Segmentation</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/nqclient" title="OBIEE - NQClient.exe (52)">NQClient.exe</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/nqid" title="Obiee - The nQuireID ( Authentication nqid ) (53)">The nQuireID ( Authentication nqid )</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/nqlogviewer" title="OBIEE - The Log Viewer (nQLogViewer) (54)">The Log Viewer (nQLogViewer)</a></li><li class="list-group-item active"><a href="https://datacadamia.com/dat/obiee/nqquery.log" title="OBIEE 10G/11G - Nqquery.log (Query logging) (55)">Nqquery.log (Query logging)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/nqserror_35008" title="OBIEE 11G - nQsError: 35008 - An error occurred while trying to check out (56)">NQsError: 35008 - An error occurred while trying to check out</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/nqserver.log" title="OBIEE 10G/11G - NQServer.log (57)">NQServer.log</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/obiee_and_owb" title="Obiee - Oracle Warehouse Builder Integration (58)">Oracle Warehouse Builder Integration</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/obiee_backup" title="OBIEE 10G/11G - Backup (59)">Backup</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/obiee_client_tools" title="OBIEE - How to connect remotely to the servers (BI, Presentation) ? (60)">How to connect remotely to the servers (BI, Presentation) ?</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/obiee_script_start_service" title="OBIEE 10G - Script to start Oracle BI Servers and Cluster Controllers (61)">Script to start Oracle BI Servers and Cluster Controllers</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/oci" title="OBIEE 10G/11G - Oracle Call Interface (OCI) configuration (62)">Oracle Call Interface (OCI) configuration</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/office" title="OBIEE - Microsoft Office Server and (Add-in|Plug-In) (63)">Microsoft Office Server and (Add-in|Plug-In)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/outer_join" title="OBIEE - Outer Join (64)">Outer Join</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/password" title="OBIEE - Password (65)">Password</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/patch" title="OBIEE - Patch (66)">Patch</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/patch_11g" title="OBIEE 11G - In-Place Upgrade - Patch Set Installation from version 11.1.1.3.0 to version 11.1.1.5.0 (67)">In-Place Upgrade - Patch Set Installation from version 11.1.1.3.0 to version 11.1.1.5.0</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/patch_11g_111160" title="OBIEE 11G - In-Place Upgrade - Moving from 11.1.1.5 to 11.1.1.6 (68)">In-Place Upgrade - Moving from 11.1.1.5 to 11.1.1.6</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/populate" title="OBIEE - Populate Statement (69)">Populate Statement</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/port" title="OBIEE 10G/11G - Ports (70)">Ports</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/presentation_service_plug-in" title="OBIEE - Presentation Service Plug-in (71)">Presentation Service Plug-in</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/presentation_variable_date" title="OBIEE - Date Format in presentation variable, dashboard prompt and logical SQL (72)">Date Format in presentation variable, dashboard prompt and logical SQL</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/privilege_package" title="OBIEE - Privilege package (73)">Privilege package</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/project" title="OBIEE - Projects (74)">Projects</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/s_nq_acct" title="OBIEE - Usage Tracking S_NQ_ACCT Table (75)">Usage Tracking S_NQ_ACCT Table</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/s_nq_instance" title="OBIEE - S_NQ_INSTANCE table (76)">S_NQ_INSTANCE table</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/s_nq_summary_advisor" title="OBIEE 11G - S_NQ_SUMMARY_ADVISOR table (77)">S_NQ_SUMMARY_ADVISOR table</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/sa" title="OBIEE 10G/11G - SA System subject area (78)">SA System subject area</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/sample_app11g_10722" title="OBIEE 11G - Sample App V107 (79)">Sample App V107</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/saschinvoke" title="OBIEE - SASchInvoke (command line Triggering of Oracle BI Scheduler Jobs) (80)">SASchInvoke (command line Triggering of Oracle BI Scheduler Jobs)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/saw_url" title="OBIEE - Saw Url - Symbolic URL Parameters Applet (81)">Saw Url - Symbolic URL Parameters Applet</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/saw_url_session_variable" title="OBIEE 10G - How to set a request/session variable using the Saw Url (Go/Dashboard) (82)">How to set a request/session variable using the Saw Url (Go/Dashboard)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/scaling" title="OBIEE 11G - Scaling (83)">Scaling</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/scheduler" title="OBIEE 10G/11G - BI Scheduler (84)">BI Scheduler</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/scheduler_configuration" title="OBIEE 10G/11G - BI Scheduler Configuration (for Delivers) (85)">BI Scheduler Configuration (for Delivers)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/scheduler_mail_configuration" title="OBIEE 10G/11G - How to configure the Mail server of Scheduler/Delivers (86)">How to configure the Mail server of Scheduler/Delivers</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/scorecard" title="OBIEE 11g - Scorecards (and Strategy Management) (87)">Scorecards (and Strategy Management)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/security" title="OBIEE - Security (88)">Security</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/security_11g" title="OBIEE 11G - Security (89)">Security</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/security_level" title="OBIEE - Security (Level|Type) (90)">Security (Level|Type)</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/security_manager" title="OBIEE - The Security Manager (91)">The Security Manager</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/staticports.ini" title="OBIEE 11G - staticports.ini (93)">Staticports.ini</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/subject_area" title="OBIEE - Subject Area / Presentation catalog (94)">Subject Area / Presentation catalog</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/support" title="OBIEE - (Error Correction) Support (95)">(Error Correction) Support</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/temp" title="OBIEE 11g - Temps files (96)">Temps files</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/time_zone" title="OBIEE - Time zone (97)">Time zone</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/variable" title="OBIEE - All type of variables (98)">All type of variables</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/versioning" title="OBIEE - Versioning (99)">Versioning</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/vpd" title="OBIEE - Virtual Private Database (100)">Virtual Private Database</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/weblanguage" title="OBIEE 10G/11G - WEBLANGUAGE system session variable (101)">WEBLANGUAGE system session variable</a></li><li class="list-group-item "><a href="https://datacadamia.com/dat/obiee/wna" title="OBIEE 11G - SSO Authentication with Windows Native Authentication (WNA) (102)">SSO Authentication with Windows Native Authentication (WNA)</a></li></ul><div class="panel-footing"><a class="minimap_badge" href="https://gerardnico.com/dokuwiki/minimap">Mini</a></div></div></div>
+</nav>
+</nav>
+<main role="main" class="col-md-10 order-first">
+
+
+
+
+<h1 class="sectionedit1" id="obiee_10g11g_-_nqquerylog_query_logging">OBIEE 10G/11G - Nqquery.log (Query logging)</h1>
+<p class="branch rplus">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="https://datacadamia.com/start" title="start">Home</a></li>
+<li class="breadcrumb-item"><a href="https://datacadamia.com/dat/dat" title="Reporting and Data Access Tools">Reporting and Data Access Tools</a></li>
+<li class="breadcrumb-item"><a href="https://datacadamia.com/dat/obiee/start" title="Oracle Business Intelligence (OBIEE/Siebel Analytics)">Oracle Business Intelligence (OBIEE/Siebel Analytics)</a></li>
+</ol>
+</nav>
+<div class="level1">
+</div>
+
+<div id="dw__toc" class="dw__toc">
+<h3 class="toggle">Table of Contents</h3>
+<div>
+<ul class="toc">
+<li class="level1"><div class="li"><a href="#about">1 - About</a></div></li>
+<li class="level1"><div class="li"><a href="#articles_related">2 - Articles Related</a></div></li>
+<li class="level1"><div class="li"><a href="#configuration">3 - Configuration</a></div>
+<ul class="toc">
+<li class="level2"><div class="li"><a href="#g">3.1 - 10G</a></div></li>
+</ul>
+</li>
+<li class="level1"><div class="li"><a href="#documentationreference">4 - Documentation / Reference</a></div></li>
+</ul>
+</div>
+</div>
+
+<h2 class="sectionedit2" id="about">1 - About</h2>
+<div class="level2">
+<p>
+It&#039;s the log file of BI Server showing information about the <a href="https://datacadamia.com/dat/obiee/obis/query_processing/query_processing" class="wikilink1" title="dat:obiee:obis:query_processing:query_processing" data-wiki-id="dat:obiee:obis:query_processing:query_processing">process</a> of a <a href="https://datacadamia.com/dat/obiee/obis/logical_sql/logical_sql" class="wikilink1" title="dat:obiee:obis:logical_sql:logical_sql" data-wiki-id="dat:obiee:obis:logical_sql:logical_sql">logical SQL query</a>.
+</p>
+<p>
+It&#039;s located in the directory:
+</p>
+<ul>
+<li class="level1"><div class="li"> 10g: BI_ORACLE_HOME/server/Log</div>
+</li>
+<li class="level1"><div class="li"> 11g: ORACLE_INSTANCE/diagnostics/logs/OracleBIServerComponent/coreapplication_obis1</div>
+</li>
+</ul>
+<p>
+To extract the informations contain in this file, you can :
+</p>
+<ul>
+<li class="level1"><div class="li"> use the <a href="https://datacadamia.com/dat/obiee/obis/logical_sql/manage_session_log" class="wikilink1" title="dat:obiee:obis:logical_sql:manage_session_log" data-wiki-id="dat:obiee:obis:logical_sql:manage_session_log">session manager of BI Presentation service</a></div>
+</li>
+<li class="level1"><div class="li"> use the <a href="https://datacadamia.com/dat/obiee/nqlogviewer" class="wikilink1" title="dat:obiee:nqlogviewer" data-wiki-id="dat:obiee:nqlogviewer">nqlogviewer</a> utility</div>
+</li>
+<li class="level1"><div class="li"> open the file with a text editor</div>
+</li>
+</ul>
+<p>
+Oracle BI Server query logging is tracked at a user level. It is a resource-intensive process if you track the entire user community. For production systems, it is recommended that query logging be enabled only for a very targeted user community. In production systems, you can use <a href="https://datacadamia.com/dat/obiee/obis/usage_tracking" class="wikilink1" title="dat:obiee:obis:usage_tracking" data-wiki-id="dat:obiee:obis:usage_tracking">Usage tracking</a> as the production-level logging facility
+</p>
+<p>
+NqQuery.log file shows Physical SQL Query, logical execution plan where <a href="https://datacadamia.com/dat/obiee/obis/usage_tracking" class="wikilink1" title="dat:obiee:obis:usage_tracking" data-wiki-id="dat:obiee:obis:usage_tracking">Usage tracking</a> does not have this information.
+</p>
+<p>
+You can define the amount of information written by setting the <a href="https://datacadamia.com/dat/obiee/obis/loglevel" class="wikilink1" title="dat:obiee:obis:loglevel" data-wiki-id="dat:obiee:obis:loglevel">loglevel</a>.
+</p>
+<p>
+<span class="wrap_tip ">You can query this log file online. See <a href="https://datacadamia.com/weblogic/wldf" class="wikilink1" title="weblogic:wldf" data-wiki-id="weblogic:wldf">WebLogic - Diagnostics Framework (WLDF)</a></span>
+</p>
+</div>
+<h2 class="sectionedit3" id="articles_related">2 - Articles Related</h2>
+<div class="level2">
+<div id="combo_related" class="related-container">
+<ul>
+<li><a href="https://datacadamia.com/dat/obiee/obis/physical_sql" class="wikilink1" title="dat:obiee:obis:physical_sql" data-wiki-id="dat:obiee:obis:physical_sql">OBIEE - Physical SQL</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/obis/measure_level_based" class="wikilink1" title="dat:obiee:obis:measure_level_based" data-wiki-id="dat:obiee:obis:measure_level_based">OBIEE 10G/11G - Level-Based Measure Calculations</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/obis/usage_tracking" class="wikilink1" title="dat:obiee:obis:usage_tracking" data-wiki-id="dat:obiee:obis:usage_tracking">OBIEE 10G/11G - (Usage Tracking|UT) (Query Log)</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/obis/odbc" class="wikilink1" title="dat:obiee:obis:odbc" data-wiki-id="dat:obiee:obis:odbc">OBIEE - ODBC</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/obis/logical_sql/function_time" class="wikilink1" title="dat:obiee:obis:logical_sql:function_time" data-wiki-id="dat:obiee:obis:logical_sql:function_time">OBIEE - Time Series Conversion Functions : AGO and TODATE</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/diagnostic" class="wikilink1" title="dat:obiee:diagnostic" data-wiki-id="dat:obiee:diagnostic">OBIEE 11G - Log Files (Oracle Diagnostic Logging - ODL)</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/obis/logical_sql/multiple_subject_area" class="wikilink1" title="dat:obiee:obis:logical_sql:multiple_subject_area" data-wiki-id="dat:obiee:obis:logical_sql:multiple_subject_area">OBIEE 10G - Reporting on Multiple Subject Area (Advanced Logical SQL)</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/obis/logical_sql/manage_session_log" class="wikilink1" title="dat:obiee:obis:logical_sql:manage_session_log" data-wiki-id="dat:obiee:obis:logical_sql:manage_session_log">OBIEE 10G/11G - How to see the Physical SQL generated by a request in Presentation Service ?</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/obis/fragmentation_content" class="wikilink1" title="dat:obiee:obis:fragmentation_content" data-wiki-id="dat:obiee:obis:fragmentation_content">OBIEE - Fragmentation Content, value-based, horizontal partitioning</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/obips/write_back" class="wikilink1" title="dat:obiee:obips:write_back" data-wiki-id="dat:obiee:obips:write_back">OBIEE 10G/11G - Writeback Capabilities (Table of Pivot)</a></li>
+<li><a href="https://datacadamia.com/dat/obiee/nqquery.log?do=backlink" class="" rel="nofollow" title="More...">More ...</a></li>
+</ul>
+</div>
+</div>
+<h2 class="sectionedit4" id="configuration">3 - Configuration</h2>
+<div class="level2">
+</div>
+<h3 class="sectionedit5" id="g">3.1 - 10G</h3>
+<div class="level3">
+<p>
+In the <a href="https://datacadamia.com/dat/obiee/obis/nqsconfig.ini" class="wikilink1" title="dat:obiee:obis:nqsconfig.ini" data-wiki-id="dat:obiee:obis:nqsconfig.ini">nqsconfig.ini</a> file, you can change two parameters :
+</p>
+<pre class="file"># ##############################################################################
+# User Log Section
+# The user log NQQuery.log is kept in the server\log directory. It logs
+# activity about queries when enabled for a user. Entries can be
+# viewed using a text editor or the nQLogViewer executable.
+# ##############################################################################
+
+[USER_LOG]
+
+USER_LOG_FILE_SIZE = 10 MB;   // default size
+CODE_PAGE = &quot;UTF8&quot;;           // ANSI, UTF8, 1252, etc.</pre>
+</div>
+<h2 class="sectionedit6" id="documentationreference">4 - Documentation / Reference</h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> <a href="https://support.oracle.com/epmos/faces/ui/km/DocumentDisplay.jspx?id=478251.1" class="interwiki iw_mos" title="https://support.oracle.com/epmos/faces/ui/km/DocumentDisplay.jspx?id=478251.1">How To Troubleshoot OBI Hangs on Windows</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="https://support.oracle.com/epmos/faces/ui/km/DocumentDisplay.jspx?id=1096900.1" class="interwiki iw_mos" title="https://support.oracle.com/epmos/faces/ui/km/DocumentDisplay.jspx?id=1096900.1">How to troubleshoot performance issues in OBIEE ?</a></div>
+</li>
+</ul>
+</div>
+</main>
+
+<nav role="complementary" class="col-md-3 order-xs-2 order-md-last">
+
+<nav class="bs-docs-sidebar hidden-prints">
+<div class="m-o mb-3 card">
+<div class="card-body">
+<blockquote class="blockquote mb-0">
+In God we <a href="https://datacadamia.com/management/truth" class="wikilink1" title="management:truth" data-wiki-id="management:truth">trust</a>, all others must bring data.
+<footer class="blockquote-footer"><cite>W.E. Deming</cite></footer>
+</blockquote>
+</div>
+</div>
+
+</nav>
+
+</nav>
+
+</div>
+
+</div>
+
+
+<div class="container">
+<div class="row col-16 justify-content-center pt-3">
+<div class="col-16 col-md-12 text-center" <p>
+<br />
+</p>
+</div>
+</div>
+<div class="row col-16 justify-content-center">
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Data (State)</strong><br />
+<a href="https://datacadamia.com/data/data" class="wikilink1" title="data:data" data-wiki-id="data:data">Data (State)</a><br />
+<a href="https://datacadamia.com/data/database/start" class="wikilink1" title="data:database:start" data-wiki-id="data:database:start">DataBase</a><br />
+<a href="https://datacadamia.com/data/processing/processing" class="wikilink1" title="data:processing:processing" data-wiki-id="data:processing:processing">Data Processing</a><br />
+<a href="https://datacadamia.com/data/quality/quality" class="wikilink1" title="data:quality:quality" data-wiki-id="data:quality:quality">Data Quality</a><br />
+<a href="https://datacadamia.com/data/type/type" class="wikilink1" title="data:type:type" data-wiki-id="data:type:type">Data Structure</a><br />
+<a href="https://datacadamia.com/data/type/type" class="wikilink1" title="data:type:type" data-wiki-id="data:type:type">Data Type</a><br />
+<a href="https://datacadamia.com/data/warehouse/start" class="wikilink1" title="data:warehouse:start" data-wiki-id="data:warehouse:start">Data Warehouse</a><br />
+<a href="https://datacadamia.com/data/viz/viz" class="wikilink1" title="data:viz:viz" data-wiki-id="data:viz:viz">Data Visualization</a><br />
+<a href="https://datacadamia.com/data/partition/partition" class="wikilink1" title="data:partition:partition" data-wiki-id="data:partition:partition">Data Partition</a><br />
+<a href="https://datacadamia.com/data/persistence/persistence" class="wikilink1" title="data:persistence:persistence" data-wiki-id="data:persistence:persistence">Data Persistence</a><br />
+<a href="https://datacadamia.com/data/concurrency/start" class="wikilink1" title="data:concurrency:start" data-wiki-id="data:concurrency:start">Data Concurrency</a><br />
+</p>
+</div>
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Data Science</strong><br />
+<a href="https://datacadamia.com/data_mining/start" class="wikilink1" title="data_mining:start" data-wiki-id="data_mining:start">Data Analysis</a><br />
+<a href="https://datacadamia.com/data_mining/start" class="wikilink1" title="data_mining:start" data-wiki-id="data_mining:start">Statistics</a><br />
+<a href="https://datacadamia.com/data_mining/start" class="wikilink1" title="data_mining:start" data-wiki-id="data_mining:start">Data Science</a><br />
+<a href="https://datacadamia.com/linear_algebra/linear_algebra" class="wikilink1" title="linear_algebra:linear_algebra" data-wiki-id="linear_algebra:linear_algebra">Linear Algebra</a>
+<a href="https://datacadamia.com/mathematics/mathematics" class="wikilink1" title="mathematics:mathematics" data-wiki-id="mathematics:mathematics">Mathematics</a><br />
+<a href="https://datacadamia.com/trigonometry/trigonometry" class="wikilink1" title="trigonometry:trigonometry" data-wiki-id="trigonometry:trigonometry">Trigonometry</a>
+</p>
+</div>
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Modeling</strong><br />
+<a href="https://datacadamia.com/process/process" class="wikilink1" title="process:process" data-wiki-id="process:process">Process</a><br />
+<a href="https://datacadamia.com/data/modeling/modeling" class="wikilink1" title="data:modeling:modeling" data-wiki-id="data:modeling:modeling">Logical Data Modeling</a><br />
+<a href="https://datacadamia.com/data/type/relation/modeling/modeling" class="wikilink1" title="data:type:relation:modeling:modeling" data-wiki-id="data:type:relation:modeling:modeling">Relational Modeling</a><br />
+<a href="https://datacadamia.com/data/type/cube/modeling/modeling" class="wikilink1" title="data:type:cube:modeling:modeling" data-wiki-id="data:type:cube:modeling:modeling">Dimensional Modeling</a><br />
+<a href="https://datacadamia.com/automata/automata" class="wikilink1" title="automata:automata" data-wiki-id="automata:automata">Automata</a>
+</p>
+</div>
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Data Type</strong><br />
+<a href="https://datacadamia.com/data/type/number/number" class="wikilink1" title="data:type:number:number" data-wiki-id="data:type:number:number">Number</a><br />
+<a href="https://datacadamia.com/data/type/time/time" class="wikilink1" title="data:type:time:time" data-wiki-id="data:type:time:time">Time</a><br />
+<a href="https://datacadamia.com/data/type/text/text" class="wikilink1" title="data:type:text:text" data-wiki-id="data:type:text:text">Text</a><br />
+<a href="https://datacadamia.com/data/type/collection/collection" class="wikilink1" title="data:type:collection:collection" data-wiki-id="data:type:collection:collection">Collection</a><br />
+<a href="https://datacadamia.com/data/type/relation/start" class="wikilink1" title="data:type:relation:start" data-wiki-id="data:type:relation:start">Relation (Table)</a><br />
+<a href="https://datacadamia.com/data/type/cube/cube" class="wikilink1" title="data:type:cube:cube" data-wiki-id="data:type:cube:cube">Cube</a><br />
+<a href="https://datacadamia.com/data/type/tree/tree" class="wikilink1" title="data:type:tree:tree" data-wiki-id="data:type:tree:tree">Tree</a><br />
+<a href="https://datacadamia.com/data/type/key_value/key_value" class="wikilink1" title="data:type:key_value:key_value" data-wiki-id="data:type:key_value:key_value">Key/Value</a><br />
+<a href="https://datacadamia.com/data/type/graph/graph" class="wikilink1" title="data:type:graph:graph" data-wiki-id="data:type:graph:graph">Graph</a><br />
+<a href="https://datacadamia.com/data/type/spatial/start" class="wikilink1" title="data:type:spatial:start" data-wiki-id="data:type:spatial:start">Spatial</a><br />
+<a href="https://datacadamia.com/data/type/color/color" class="wikilink1" title="data:type:color:color" data-wiki-id="data:type:color:color">Color</a><br />
+<a href="https://datacadamia.com/data/type/log/log" class="wikilink1" title="data:type:log:log" data-wiki-id="data:type:log:log">Log</a><br />
+</p>
+</div>
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Measure Levels</strong><br />
+<a href="https://datacadamia.com/data/type/ordinal/order" class="wikilink1" title="data:type:ordinal:order" data-wiki-id="data:type:ordinal:order">Order</a><br />
+<a href="https://datacadamia.com/data/type/nominal/nominal" class="wikilink1" title="data:type:nominal:nominal" data-wiki-id="data:type:nominal:nominal">Nominal</a><br />
+<a href="https://datacadamia.com/data/type/nominal/discrete" class="wikilink1" title="data:type:nominal:discrete" data-wiki-id="data:type:nominal:discrete">Discrete</a><br />
+<a href="https://datacadamia.com/data_mining/distance" class="wikilink1" title="data_mining:distance" data-wiki-id="data_mining:distance">Distance</a><br />
+<a href="https://datacadamia.com/data_mining/ratio" class="wikilink1" title="data_mining:ratio" data-wiki-id="data_mining:ratio">Ratio</a><br />
+</p>
+</div>
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Code</strong><br />
+<a href="https://datacadamia.com/code/compiler/compiler" class="wikilink1" title="code:compiler:compiler" data-wiki-id="code:compiler:compiler">Compiler</a><br />
+<a href="https://datacadamia.com/code/compiler/parser" class="wikilink1" title="code:compiler:parser" data-wiki-id="code:compiler:parser">Lexical Parser</a><br />
+<a href="https://datacadamia.com/code/grammar/grammar" class="wikilink1" title="code:grammar:grammar" data-wiki-id="code:grammar:grammar">Grammar</a><br />
+<a href="https://datacadamia.com/code/function/function" class="wikilink1" title="code:function:function" data-wiki-id="code:function:function">Function</a><br />
+<a href="https://datacadamia.com/code/test/test" class="wikilink1" title="code:test:test" data-wiki-id="code:test:test">Testing</a><br />
+<a href="https://datacadamia.com/code/debugging/debugging" class="wikilink1" title="code:debugging:debugging" data-wiki-id="code:debugging:debugging">Debugging</a><br />
+<a href="https://datacadamia.com/code/shipping/shipping" class="wikilink1" title="code:shipping:shipping" data-wiki-id="code:shipping:shipping">Shipping</a><br />
+<a href="https://datacadamia.com/code/type/type" class="wikilink1" title="code:type:type" data-wiki-id="code:type:type">Data Type</a><br />
+<a href="https://datacadamia.com/code/version/start" class="wikilink1" title="code:version:start" data-wiki-id="code:version:start">Versioning</a><br />
+<a href="https://datacadamia.com/code/design_pattern/design_pattern" class="wikilink1" title="code:design_pattern:design_pattern" data-wiki-id="code:design_pattern:design_pattern">Design Pattern</a><br />
+</p>
+</div>
+</div>
+<div class="row col-16 justify-content-center pt-3">
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Infrastructure</strong><br />
+<a href="https://datacadamia.com/os/os" class="wikilink1" title="os:os" data-wiki-id="os:os">Operating System</a><br />
+<a href="https://datacadamia.com/crypto/crypto" class="wikilink1" title="crypto:crypto" data-wiki-id="crypto:crypto">Cryptography</a><br />
+<a href="https://datacadamia.com/code/design/security" class="wikilink1" title="code:design:security" data-wiki-id="code:design:security">Security</a><br />
+<a href="https://datacadamia.com/file/start" class="wikilink1" title="file:start" data-wiki-id="file:start">File System</a><br />
+<a href="https://datacadamia.com/network/network" class="wikilink1" title="network:network" data-wiki-id="network:network">Network</a><br />
+<a href="https://datacadamia.com/os/process/process" class="wikilink1" title="os:process:process" data-wiki-id="os:process:process">Process (Thread)</a><br />
+<a href="https://datacadamia.com/computer/computer" class="wikilink1" title="computer:computer" data-wiki-id="computer:computer">Computer</a><br />
+<a href="https://datacadamia.com/counter/start" class="wikilink1" title="counter:start" data-wiki-id="counter:start">PerfCounter</a><br />
+<a href="https://datacadamia.com/code/shipping/infra" class="wikilink1" title="code:shipping:infra" data-wiki-id="code:shipping:infra">Infra As Code</a><br />
+</p>
+</div>
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Marketing</strong><br />
+<a href="https://datacadamia.com/marketing/ad/start" class="wikilink1" title="marketing:ad:start" data-wiki-id="marketing:ad:start">Advertising</a><br />
+<a href="https://datacadamia.com/marketing/analytics/analytics" class="wikilink1" title="marketing:analytics:analytics" data-wiki-id="marketing:analytics:analytics">Analytics</a><br />
+<a href="https://datacadamia.com/marketing/email/email" class="wikilink1" title="marketing:email:email" data-wiki-id="marketing:email:email">Email</a>
+</p>
+</div>
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Web</strong><br />
+<a href="https://datacadamia.com/web/html/html" class="wikilink1" title="web:html:html" data-wiki-id="web:html:html">Html</a><br />
+<a href="https://datacadamia.com/web/dom/dom" class="wikilink1" title="web:dom:dom" data-wiki-id="web:dom:dom">Dom</a><br />
+<a href="https://datacadamia.com/web/http/http" class="wikilink1" title="web:http:http" data-wiki-id="web:http:http">Http</a><br />
+<a href="https://datacadamia.com/web/resource/url" class="wikilink1" title="web:resource:url" data-wiki-id="web:resource:url">Url</a><br />
+<a href="https://datacadamia.com/web/css/start" class="wikilink1" title="web:css:start" data-wiki-id="web:css:start">Css</a><br />
+<a href="https://datacadamia.com/web/javascript/javascript" class="wikilink1" title="web:javascript:javascript" data-wiki-id="web:javascript:javascript">Javascript</a><br />
+<a href="https://datacadamia.com/web/selector/selector" class="wikilink1" title="web:selector:selector" data-wiki-id="web:selector:selector">Selector</a><br />
+<a href="https://datacadamia.com/web/browser/browser" class="wikilink1" title="web:browser:browser" data-wiki-id="web:browser:browser">Browser</a><br />
+<a href="https://datacadamia.com/web/service/service" class="wikilink1" title="web:service:service" data-wiki-id="web:service:service">Web Services</a><br />
+<a href="https://datacadamia.com/iam/oauth/oauth" class="wikilink1" title="iam:oauth:oauth" data-wiki-id="iam:oauth:oauth">OAuth</a>
+</p>
+</div>
+<div class="col-8 col-sm-5 col-md-2 text-left">
+<p>
+<strong>Contact</strong><br />
+<a href="/cdn-cgi/l/email-protection#785e5b49484d435e5b494948435e5b49484a435e5b494949435e5b4e4c435e5b494848435e5b414f435e5b49494e435e5b414f435e5b4141435e5b414f435e5b494848435e5b414f435e5b494841435e5b49484d435e5b414f435e5b4c4e435e5b4141435e5b494949435e5b494841435e5b4e4b435e5b49494d435e5b49494f435e5b4140435e5b49484e435e5b494849435e5b4141435e5b49494e435e5b4e49435e5b4e4f435e5b494949435e5b494948435e5b49494e435e5b414f435e5b4141435e5b49494e435e5b4b4a435e5b494940435e5b49484d435e5b414f435e5b4b4a435e5b494848435e5b414f435e5b49494e435e5b414f435e5b4141435e5b414f435e5b494848435e5b414f435e5b494841435e5b49484d435e5b414f43" class="mail" title="&#105;&#110;&#102;&#111;&#64;&#100;&#97;&#116;&#97;&#99;&#97;&#100;&#97;&#109;&#105;&#97;&#46;&#99;&#111;&#109;&#63;&#115;&#117;&#98;&#106;&#101;&#99;&#116;&#61;&#67;&#111;&#110;&#116;&#97;&#99;&#116;&#32;&#118;&#105;&#97;&#32;&#100;&#97;&#116;&#97;&#99;&#97;&#100;&#97;&#109;&#105;&#97;"><span class="__cf_email__" data-cfemail="5b32353d341b3f3a2f3a383a3f3a36323a75383436">[email&#160;protected]</span></a> <br />
+<a href="https://datacadamia.com/legal/privacy" class="wikilink1" title="legal:privacy" data-wiki-id="legal:privacy">Privacy Policy</a> <br />
+<a href="http://status.datacadamia.com/" class="urlextern" target="_blank" title="http://status.datacadamia.com/" rel="noopener">Status</a>
+</p>
+</div>
+</div>
+</div>
+<div class="mx-auto" style="width: 300px;text-align: center"> <i>Powered by <a href="https://combostrap.com/" title="ComboStrap">ComboStrap</a></i></div>
+
+
+<div class="no"><img src="https://datacadamia.com/lib/exe/taskrunner.php?id=dat%3Aobiee%3Anqquery.log&amp;1608228390" width="2" height="1" alt="" /></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></html>

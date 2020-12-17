@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--
+
+    Author: Twily                                                                                              2015
+    http://twily.info/
+
+    Syntax Highlighting
+    https://highlightjs.org/
+    https://github.com/wcoder/highlightjs-line-numbers.js/
+
+    Flattr Icons
+    https://github.com/NitruxSA/flattr-icons
+
+    Twilight Vector
+    http://racer437.deviantart.com/art/Twilight-Sparkle-Vector-321236369
+
+    Other Sources:
+    http://stackoverflow.com/questions/1173194/select-all-div-text-with-single-mouse-click
+    http://stackoverflow.com/questions/1060008/is-there-a-way-to-detect-if-a-browser-window-is-not-currently-active
+    http://stackoverflow.com/questions/260857/changing-website-favicon-dynamically
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="Twily's dotfiles for desktop customization/ricing">
+<meta name="keywords" content="dotfiles,rice,customization,desktop,chat.log">
+<title>twily.info ~/www/chat/chat.log</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+<link id="favicon" rel="shortcut icon" href="/favicon.ico?v=2" />
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=28" />
+<link rel="stylesheet" type="text/css" href="/css/highlight.css?v=5" />
+<script type="text/javascript" src="/js/main.js?v=17"></script>
+</head>
+<body>
+
+<div id="container">
+<a class="btn bb" href="/" target="_self">~</a><a class="btn bb" href="/www/" target="_self">www</a><a class="btn bb selected" href="/www/chat/" target="_self">chat</a>
+<div class="action">
+    <span class="items">9 items</span> •
+    <a class="btn bb" href="/d/www/chat/" target="_blank">Download ./*</a>
+</div>
+<hr /><br />
+<div id="browse">
+    <a class="dir" href="/www/" target="_self"><div class="icon"><img src="/img/folder-up.png" onload="this.style.visibility='visible';" /></div>..</a>
+    <a class="dir" href="/www/chat/css/" target="_self"><div class="icon"><img src="/img/folder.png" onload="this.style.visibility='visible';" /></div>css</a>
+    <a class="dir" href="/www/chat/js/" target="_self"><div class="icon"><img src="/img/folder.png" onload="this.style.visibility='visible';" /></div>js</a>
+    <a class="dir" href="/www/chat/php/" target="_self"><div class="icon"><img src="/img/folder.png" onload="this.style.visibility='visible';" /></div>php</a>
+    <a class="file selected" href="/www/chat/chat.log#view" target="_self"><div class="icon"><img src="/img/text.png" onload="this.style.visibility='visible';" /></div>chat.log</a>
+    <a class="file" href="/www/chat/index.php#view" target="_self"><div class="icon"><img src="/img/xml.png" onload="this.style.visibility='visible';" /></div>index.php</a>
+    <a class="file" href="/www/chat/list.log#view" target="_self"><div class="icon"><img src="/img/text.png" onload="this.style.visibility='visible';" /></div>list.log</a>
+    <a class="file" href="/www/chat/post.php#view" target="_self"><div class="icon"><img src="/img/xml.png" onload="this.style.visibility='visible';" /></div>post.php</a>
+    <a class="file" href="/www/chat/read.php#view" target="_self"><div class="icon"><img src="/img/xml.png" onload="this.style.visibility='visible';" /></div>read.php</a>
+    <a class="file" href="/www/chat/user.log#view" target="_self"><div class="icon"><img src="/img/text.png" onload="this.style.visibility='visible';" /></div>user.log</a>
+</div>
+<div id="view"></div>
+<br /><hr />
+<a class="btn bt" href="#" target="_self">chat</a><a class="btn bt selected" href="/www/chat/chat.log#view" target="_self">chat.log</a>
+<div class="action">
+    <span class="fviews">1 117</span> • 
+    <span class="lastm" style="color: rgb(100,99,127);" title="Last modified March 5th, 2020 11:26 CET">9 months ago</span> • 
+    <a class="btn bt" href="/d/www/chat/chat.log" target="_blank">Download</a><a class="btn bt" href="/s/www/chat/chat.log" target="_blank">Raw</a><a class="btn bt" href="/www/chat/" target="_self">Close</a>
+</div>
+<br />
+<script type="text/javascript" src="/js/highlight.min.js?v=1"></script>
+<script type="text/javascript" src="/js/highlightjs-line-numbers.min.js?v=1"></script>
+<script type="text/javascript">
+hljs.configure({tabReplace: '    ',classPrefix: ''});
+hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
+</script>
+<center>
+<br /><pre id="text" onmouseover="zindex(this.id);" onclick="zindex(this.id);"><code id="code" onmousedown="selectText(event,1);" onmouseup="selectText(event,2);">
+143839595221000aa00&amp;gt;&amp;gt;&amp;gt;Example of how the chat.log file looks like.---- 
+143839595221100aa00&amp;gt;&amp;gt;&amp;gt;---- 
+143839595221200aa00&amp;gt;&amp;gt;&amp;gt;The log will never be cleared automatically.---- 
+143839595221300aa00&amp;gt;&amp;gt;&amp;gt;By default a new session will display the last ---- 
+143839595221400aa00&amp;gt;&amp;gt;&amp;gt;50 messages in the log.---- 
+143839595221500aa00&amp;gt;&amp;gt;&amp;gt;Admin feature give you a '@' under 'Users online' ---- 
+143839595221600aa00&amp;gt;&amp;gt;&amp;gt;and ability to kick/ban.---- 
+143839595221700aa00&amp;gt;&amp;gt;&amp;gt;(See 'chat/php/cmd.php' file for more in-depth ---- 
+143839595221800aa00&amp;gt;&amp;gt;&amp;gt;admin commands).---- 
+143839595221900aa00&amp;gt;&amp;gt;&amp;gt;(You'll need to setup an admin password in the ---- 
+143839595222000aa00&amp;gt;&amp;gt;&amp;gt;'chat/php/setup.php' file).---- 
+143839595222100aa00&amp;gt;&amp;gt;&amp;gt;(If the chat has issues displaying users or ---- 
+143839595222200aa00&amp;gt;&amp;gt;&amp;gt;messages try re-creation the *.log files).---- 
+143839595222300aa00&amp;gt;&amp;gt;&amp;gt;---- 
+143839595222400aa00&amp;gt;&amp;gt;&amp;gt;Embed code can be found at the bottom of ---- 
+143839595222500aa00&amp;gt;&amp;gt;&amp;gt;'www/{index.php,css/style.css}'.---- 
+143839595222600aa00&amp;gt;&amp;gt;&amp;gt;---- 
+143839595222700aa00&amp;gt;&amp;gt;&amp;gt;With best regards, Twily(.info). Please enjoy the ---- 
+143839595222800aa00&amp;gt;&amp;gt;&amp;gt;chat/site :^).---- 
+15834039861268176c1guest332has joined the chat.---- 
+</code></pre><br />
+
+<a class="btn bb" id="top" href="#" target="_self">Top</a>
+<hr />
+</center>
+<script type="text/javascript">function contact(x) { window.location.href='mailto:'+x.replace(' at ','@').replace(' dot ','.'); }</script>
+<div id="contact"><a class="btn bt" href="javascript:contact('twily at twily dot info');" target="_self">twily at twily dot info</a></div>
+<div id="copyleft"><span class="cleft"><a class="btn bb" href="https://en.wikipedia.org/wiki/Copyleft" target="_blank">©</a></span><a class="btn bt" href="/" target="_self">twily.info</a> 2013 - 2020</div>
+<br /><br /><br /><iframe src="/comment/?f=6273a2a7ed0e9b4a85489454aba2b581198fdde9b43f1419428ebb333fbbd1f3" id="comment" onload="loadCmt('comment');"></iframe><div id="visits">1 551 473 visits</div>
+</div>
+
+<script type="text/javascript">
+var lt,l=true;
+function createChat() {
+    var i=document.createElement("iframe");
+    i.id="chat";
+    i.src="/chat/";
+    i.scrolling="no";
+    i.onmouseover=function() { zindex(i.id); };
+    i.onload=function() {
+        i.style.visibility="visible";
+        if(l) {
+            clearTimeout(lt);
+            lt=setTimeout(function() { i.src=i.src; l=false; },1000);
+        }
+    };
+
+    document.body.appendChild(i);
+}
+
+if(window.addEventListener) window.addEventListener("load",createChat,false);
+else if(window.attachEvent) window.attachEvent("onload",createChat);
+else                        window.onload=createChat;
+
+function restore_chat() {
+    $('chat').contentWindow.document.getElementById('nick').value="/exit";
+    $('chat').contentWindow.post();
+    document.getElementsByTagName('body')[0].removeChild($('chat'));
+    createChat();
+}
+</script>
+<a id="chat_restore" class="btn" href="javascript:restore_chat();" target="_self">...</a>
+
+<a id="top_arrow" class="btn arrow bt" href="#view" target="_self">^</a>
+<a id="bot_arrow" class="btn arrow bb" href="#comment" target="_self">v</a>
+
+</body>
+</html>
